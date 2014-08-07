@@ -1,0 +1,36 @@
+{
+  "name": "ForceReader",
+  "version": "0.0.1",
+  "authors": [
+    "Otto Borden <ottoborden@gmail.com>"
+  ],
+  "description": "personal website",
+  "main": "server.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "personal",
+    "website",
+    "otto",
+    "borden"
+  ],
+  "license": "MIT",
+  "homepage": "http://ottoborden.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "latest",
+    "angularjs": "latest",
+    "animate.css": "3.2.0",
+    "bootstrap": "latest",
+    "font-awesome": "latest"
+  }
+}
