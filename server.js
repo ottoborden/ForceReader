@@ -5,6 +5,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var mongoose = require('mongoose');
+var bcrypt = require('bcryptjs');
+
+var api = require('./public/api/api');
+
 var app = express();
 
 app.set('port', process.env.PORT || 3000);
@@ -16,6 +21,11 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/api', api);
+app.get('*', function(req, res) {
+    res.redirect('/#' + req.originalUrl);
+});
 
 app.listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));
