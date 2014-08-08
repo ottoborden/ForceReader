@@ -11,7 +11,8 @@ angular.module('lodash', []).factory('lodashService', [function() {
 angular.module('myApp', [
     'ngRoute',
     'Home',
-    'Reader'
+    'Reader',
+    'd3'
 ]).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
     $routeProvider

@@ -1,9 +1,9 @@
 angular.module('Reader')
-    .directive('readerDirective', ['$compile', 'd3Service', function($compile, d3Service) { 'use strict';
+    .directive('readerDirective', ['d3Service', function(d3Service) { 'use strict';
         return {
-            restrict: 'A',
+            restrict: 'AE',
             link: function link(scope, element, attrs) {
-                console.log('link');
+                console.log(d3);
             }
         }
     }]);

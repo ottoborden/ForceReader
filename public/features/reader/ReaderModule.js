@@ -1,3 +1,3 @@
 angular.module('Reader', [
-    'd3Service'
+    'd3'
 ]);
