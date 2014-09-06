@@ -3,9 +3,10 @@ angular.module('Reader')
         $scope.fetching = false;
         $scope.numFeeds = 0;
         $scope.feedsLoaded = 0;
+        $scope.storiesLoaded = 0;
         $scope.feedData = {
             name: 'root',
-            size: 1000,
+            size: 2000,
             weight: 500,
             children: []
         };
@@ -28,7 +29,8 @@ angular.module('Reader')
                 children: data.feed.stories
             });
 
-            $scope.feedsLoaded++;
+            $scope.feedsLoaded = $scope.feedData.children.length;
+            $scope.storiesLoaded += data.feed.stories.length;
             $scope.begin = true;
 
             $scope.$digest();

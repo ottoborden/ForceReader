@@ -1,6 +1,6 @@
 angular.module('Reader')
     .directive('readerDirective', ['d3Service', function (d3Service) { //'use strict';
-        function link(scope, element, attrs) {
+        function linkFn(scope, element, attrs) {
             var force,
                 svg,
                 link,
@@ -16,8 +16,8 @@ angular.module('Reader')
             });
 
             function drawForceReader() {
-                var width = 800,
-                    height = 500;
+                var width = 900,
+                    height = 400;
 
                 force = d3.layout.force()
                     .size([width, height])
@@ -38,7 +38,6 @@ angular.module('Reader')
             function updateForceReader(root) {
                 var nodes = flatten(root),
                     links = d3.layout.tree().links(nodes);
-
                 // Restart the force layout
                 force
                     .nodes(nodes)
@@ -88,10 +87,9 @@ angular.module('Reader')
                     .style("fill", color)
                     .on("click", click)
                     .call(force.drag);
-            }
+            };
 
             function tick() {
-                scope.ticks++;
                 link.attr("x1", function (d) {
                     return d.source.x;
                 })
@@ -111,12 +109,13 @@ angular.module('Reader')
                     .attr("cy", function (d) {
                         return d.y;
                     });
-            }
+                scope.ticks++;
+            };
 
             // Color leaf nodes orange, and packages white or blue.
             function color(d) {
                 return d._children ? "#3182bd" : d.children ? "#c6dbef" : "#fd8d3c";
-            }
+            };
 
             // Toggle children on click.
             function click(d) {
@@ -131,9 +130,9 @@ angular.module('Reader')
                         d.children = d._children;
                         d._children = null;
                     }
-                    update();
+                    updateForceReader(root);
                 }
-            }
+            };
 
             // Returns a list of all nodes under the root.
             function flatten(root) {
@@ -147,11 +146,11 @@ angular.module('Reader')
 
                 recurse(root);
                 return nodes;
-            }
+            };
         };
 
         return {
             restrict: 'AE',
-            link: link
+            link: linkFn
         }
     }]);
