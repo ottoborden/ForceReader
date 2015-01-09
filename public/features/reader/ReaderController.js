@@ -6,9 +6,10 @@ angular.module('Reader')
         $scope.storiesLoaded = 0;
         $scope.feedData = {
             name: 'root',
-            size: 2000,
+            size: 30000,
             weight: 500,
-            children: []
+            children: [],
+            fixed: 0
         };
         $scope.begin = false;
 
@@ -23,6 +24,7 @@ angular.module('Reader')
 
         socket.on('feedLoaded', function(data) {
             console.log('a feed has been loaded');
+            console.log(data);
             $scope.feedData.children.push({
                 name: data.feed.feedName,
                 size: data.feed.stories.length * 1000,

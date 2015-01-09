@@ -1,0 +1,1703 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'update' ]
+2 info using npm@2.1.3
+3 info using node@v0.10.28
+4 verbose node symlink /usr/local/bin/node
+5 verbose mapToRegistry name bcryptjs
+6 verbose mapToRegistry uri https://registry.npmjs.org/bcryptjs
+7 verbose mapToRegistry name body-parser
+8 verbose mapToRegistry uri https://registry.npmjs.org/body-parser
+9 verbose mapToRegistry name cookie-parser
+10 verbose mapToRegistry uri https://registry.npmjs.org/cookie-parser
+11 verbose mapToRegistry name debug
+12 verbose mapToRegistry uri https://registry.npmjs.org/debug
+13 verbose mapToRegistry name express
+14 verbose mapToRegistry uri https://registry.npmjs.org/express
+15 verbose mapToRegistry name feedparser
+16 verbose mapToRegistry uri https://registry.npmjs.org/feedparser
+17 verbose mapToRegistry name jade
+18 verbose mapToRegistry uri https://registry.npmjs.org/jade
+19 verbose mapToRegistry name lodash
+20 verbose mapToRegistry uri https://registry.npmjs.org/lodash
+21 verbose mapToRegistry name method-override
+22 verbose mapToRegistry uri https://registry.npmjs.org/method-override
+23 verbose mapToRegistry name moment
+24 verbose mapToRegistry uri https://registry.npmjs.org/moment
+25 verbose mapToRegistry name mongoose
+26 verbose mapToRegistry uri https://registry.npmjs.org/mongoose
+27 verbose mapToRegistry name morgan
+28 verbose mapToRegistry uri https://registry.npmjs.org/morgan
+29 verbose mapToRegistry name request
+30 verbose mapToRegistry uri https://registry.npmjs.org/request
+31 verbose mapToRegistry name socket.io
+32 verbose mapToRegistry uri https://registry.npmjs.org/socket.io
+33 verbose mapToRegistry name static-favicon
+34 verbose mapToRegistry uri https://registry.npmjs.org/static-favicon
+35 verbose mapToRegistry name string
+36 verbose mapToRegistry uri https://registry.npmjs.org/string
+37 verbose mapToRegistry name gulp
+38 verbose mapToRegistry uri https://registry.npmjs.org/gulp
+39 verbose mapToRegistry name gulp-plumber
+40 verbose mapToRegistry uri https://registry.npmjs.org/gulp-plumber
+41 verbose mapToRegistry name gulp-sass
+42 verbose mapToRegistry uri https://registry.npmjs.org/gulp-sass
+43 verbose request on initialization, where is /bcryptjs
+44 verbose request after pass 1, where is /bcryptjs
+45 verbose request url raw /bcryptjs
+46 verbose request resolving registry [ 'https://registry.npmjs.org/', './bcryptjs' ]
+47 verbose request after pass 2, where is https://registry.npmjs.org/bcryptjs
+48 verbose request no auth needed
+49 info attempt registry request try #1 at 23:50:53
+50 verbose request id d29181d7de7deb50
+51 verbose etag "EA2DWOJYII5XQA8MULYB8JPOL"
+52 http request GET https://registry.npmjs.org/bcryptjs
+53 verbose request on initialization, where is /body-parser
+54 verbose request after pass 1, where is /body-parser
+55 verbose request url raw /body-parser
+56 verbose request resolving registry [ 'https://registry.npmjs.org/', './body-parser' ]
+57 verbose request after pass 2, where is https://registry.npmjs.org/body-parser
+58 verbose request no auth needed
+59 info attempt registry request try #1 at 23:50:53
+60 verbose etag "ZJH0F1WO0QVMDNHF35MO1O8I"
+61 http request GET https://registry.npmjs.org/body-parser
+62 verbose request on initialization, where is /cookie-parser
+63 verbose request after pass 1, where is /cookie-parser
+64 verbose request url raw /cookie-parser
+65 verbose request resolving registry [ 'https://registry.npmjs.org/', './cookie-parser' ]
+66 verbose request after pass 2, where is https://registry.npmjs.org/cookie-parser
+67 verbose request no auth needed
+68 info attempt registry request try #1 at 23:50:53
+69 verbose etag "1G16KI0KY1K8H3U7IAXVOTPB4"
+70 http request GET https://registry.npmjs.org/cookie-parser
+71 verbose request on initialization, where is /debug
+72 verbose request after pass 1, where is /debug
+73 verbose request url raw /debug
+74 verbose request resolving registry [ 'https://registry.npmjs.org/', './debug' ]
+75 verbose request after pass 2, where is https://registry.npmjs.org/debug
+76 verbose request no auth needed
+77 info attempt registry request try #1 at 23:50:53
+78 verbose etag "81X7DHOEL4CEPX3V79L37BD9E"
+79 http request GET https://registry.npmjs.org/debug
+80 verbose request on initialization, where is /moment
+81 verbose request after pass 1, where is /moment
+82 verbose request url raw /moment
+83 verbose request resolving registry [ 'https://registry.npmjs.org/', './moment' ]
+84 verbose request after pass 2, where is https://registry.npmjs.org/moment
+85 verbose request no auth needed
+86 info attempt registry request try #1 at 23:50:53
+87 verbose etag "2R13HLS8IYHCRAQJXFCIQW4T5"
+88 http request GET https://registry.npmjs.org/moment
+89 verbose request on initialization, where is /feedparser
+90 verbose request after pass 1, where is /feedparser
+91 verbose request url raw /feedparser
+92 verbose request resolving registry [ 'https://registry.npmjs.org/', './feedparser' ]
+93 verbose request after pass 2, where is https://registry.npmjs.org/feedparser
+94 verbose request no auth needed
+95 info attempt registry request try #1 at 23:50:53
+96 verbose etag "ILIX03Y5VA9NEBNSA356A0JL"
+97 http request GET https://registry.npmjs.org/feedparser
+98 verbose request on initialization, where is /jade
+99 verbose request after pass 1, where is /jade
+100 verbose request url raw /jade
+101 verbose request resolving registry [ 'https://registry.npmjs.org/', './jade' ]
+102 verbose request after pass 2, where is https://registry.npmjs.org/jade
+103 verbose request no auth needed
+104 info attempt registry request try #1 at 23:50:53
+105 verbose etag "DA2LTTOPJ813Y2O1QM7OIRWK4"
+106 http request GET https://registry.npmjs.org/jade
+107 verbose request on initialization, where is /lodash
+108 verbose request after pass 1, where is /lodash
+109 verbose request url raw /lodash
+110 verbose request resolving registry [ 'https://registry.npmjs.org/', './lodash' ]
+111 verbose request after pass 2, where is https://registry.npmjs.org/lodash
+112 verbose request no auth needed
+113 info attempt registry request try #1 at 23:50:53
+114 verbose etag "EF38GX9ARU19ST2K758MOPE83"
+115 http request GET https://registry.npmjs.org/lodash
+116 verbose request on initialization, where is /mongoose
+117 verbose request after pass 1, where is /mongoose
+118 verbose request url raw /mongoose
+119 verbose request resolving registry [ 'https://registry.npmjs.org/', './mongoose' ]
+120 verbose request after pass 2, where is https://registry.npmjs.org/mongoose
+121 verbose request no auth needed
+122 info attempt registry request try #1 at 23:50:53
+123 verbose etag "9T2HNPLNMOBS5RSOIDPVATI6K"
+124 http request GET https://registry.npmjs.org/mongoose
+125 verbose request on initialization, where is /morgan
+126 verbose request after pass 1, where is /morgan
+127 verbose request url raw /morgan
+128 verbose request resolving registry [ 'https://registry.npmjs.org/', './morgan' ]
+129 verbose request after pass 2, where is https://registry.npmjs.org/morgan
+130 verbose request no auth needed
+131 info attempt registry request try #1 at 23:50:53
+132 verbose etag "4RWBFISLHKXAP84WO7HM9E7CV"
+133 http request GET https://registry.npmjs.org/morgan
+134 verbose request on initialization, where is /method-override
+135 verbose request after pass 1, where is /method-override
+136 verbose request url raw /method-override
+137 verbose request resolving registry [ 'https://registry.npmjs.org/', './method-override' ]
+138 verbose request after pass 2, where is https://registry.npmjs.org/method-override
+139 verbose request no auth needed
+140 info attempt registry request try #1 at 23:50:53
+141 verbose etag "C9PXZP3CGNI5WCT6HRG7L181D"
+142 http request GET https://registry.npmjs.org/method-override
+143 verbose request on initialization, where is /string
+144 verbose request after pass 1, where is /string
+145 verbose request url raw /string
+146 verbose request resolving registry [ 'https://registry.npmjs.org/', './string' ]
+147 verbose request after pass 2, where is https://registry.npmjs.org/string
+148 verbose request no auth needed
+149 info attempt registry request try #1 at 23:50:53
+150 verbose etag "1CB1UO6ATKGWAK3HJDZHL7A77"
+151 http request GET https://registry.npmjs.org/string
+152 verbose request on initialization, where is /request
+153 verbose request after pass 1, where is /request
+154 verbose request url raw /request
+155 verbose request resolving registry [ 'https://registry.npmjs.org/', './request' ]
+156 verbose request after pass 2, where is https://registry.npmjs.org/request
+157 verbose request no auth needed
+158 info attempt registry request try #1 at 23:50:53
+159 verbose etag "D7JE3A5K703E5CEP79HJ9ACSM"
+160 http request GET https://registry.npmjs.org/request
+161 verbose request on initialization, where is /static-favicon
+162 verbose request after pass 1, where is /static-favicon
+163 verbose request url raw /static-favicon
+164 verbose request resolving registry [ 'https://registry.npmjs.org/', './static-favicon' ]
+165 verbose request after pass 2, where is https://registry.npmjs.org/static-favicon
+166 verbose request no auth needed
+167 info attempt registry request try #1 at 23:50:54
+168 verbose etag "6SQM500J7A9MYEVL15Z7MS3FB"
+169 http request GET https://registry.npmjs.org/static-favicon
+170 verbose request on initialization, where is /express
+171 verbose request after pass 1, where is /express
+172 verbose request url raw /express
+173 verbose request resolving registry [ 'https://registry.npmjs.org/', './express' ]
+174 verbose request after pass 2, where is https://registry.npmjs.org/express
+175 verbose request no auth needed
+176 info attempt registry request try #1 at 23:50:54
+177 verbose etag "A9VIFC4UZUN0BS73CT9KFIRJJ"
+178 http request GET https://registry.npmjs.org/express
+179 verbose request on initialization, where is /socket.io
+180 verbose request after pass 1, where is /socket.io
+181 verbose request url raw /socket.io
+182 verbose request resolving registry [ 'https://registry.npmjs.org/', './socket.io' ]
+183 verbose request after pass 2, where is https://registry.npmjs.org/socket.io
+184 verbose request no auth needed
+185 info attempt registry request try #1 at 23:50:54
+186 verbose etag "4RCRBGBI6FR3FBY5NXR1L8LYH"
+187 http request GET https://registry.npmjs.org/socket.io
+188 verbose request on initialization, where is /gulp-sass
+189 verbose request after pass 1, where is /gulp-sass
+190 verbose request url raw /gulp-sass
+191 verbose request resolving registry [ 'https://registry.npmjs.org/', './gulp-sass' ]
+192 verbose request after pass 2, where is https://registry.npmjs.org/gulp-sass
+193 verbose request no auth needed
+194 info attempt registry request try #1 at 23:50:54
+195 verbose etag "7GPNW36Z2BPEC0GZISBYFMEUA"
+196 http request GET https://registry.npmjs.org/gulp-sass
+197 verbose request on initialization, where is /gulp-plumber
+198 verbose request after pass 1, where is /gulp-plumber
+199 verbose request url raw /gulp-plumber
+200 verbose request resolving registry [ 'https://registry.npmjs.org/', './gulp-plumber' ]
+201 verbose request after pass 2, where is https://registry.npmjs.org/gulp-plumber
+202 verbose request no auth needed
+203 info attempt registry request try #1 at 23:50:54
+204 verbose etag "AIOOXV2P8QEAAI7ZTDCTNSENO"
+205 http request GET https://registry.npmjs.org/gulp-plumber
+206 verbose request on initialization, where is /gulp
+207 verbose request after pass 1, where is /gulp
+208 verbose request url raw /gulp
+209 verbose request resolving registry [ 'https://registry.npmjs.org/', './gulp' ]
+210 verbose request after pass 2, where is https://registry.npmjs.org/gulp
+211 verbose request no auth needed
+212 info attempt registry request try #1 at 23:50:54
+213 verbose etag "AL5TS2FBBG18T0FHL4KWNLX1J"
+214 http request GET https://registry.npmjs.org/gulp
+215 http 200 https://registry.npmjs.org/debug
+216 silly registry.get cb [ 200,
+216 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:54 GMT',
+216 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+216 silly registry.get     etag: '"8RE09RF5XBKPDYSKX8AOXK49B"',
+216 silly registry.get     'content-type': 'application/json',
+216 silly registry.get     'cache-control': 'max-age=60',
+216 silly registry.get     'content-length': '29820',
+216 silly registry.get     'accept-ranges': 'bytes',
+216 silly registry.get     via: '1.1 varnish',
+216 silly registry.get     age: '20',
+216 silly registry.get     'x-served-by': 'cache-iad2141-IAD',
+216 silly registry.get     'x-cache': 'HIT',
+216 silly registry.get     'x-cache-hits': '1',
+216 silly registry.get     'x-timer': 'S1420087854.468487,VS0,VE0',
+216 silly registry.get     vary: 'Accept',
+216 silly registry.get     'keep-alive': 'timeout=10, max=50',
+216 silly registry.get     connection: 'Keep-Alive' } ]
+217 http 200 https://registry.npmjs.org/moment
+218 silly registry.get cb [ 200,
+218 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:54 GMT',
+218 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+218 silly registry.get     etag: '"F5H6FU1VS2P3LHVWC8JQIJX43"',
+218 silly registry.get     'content-type': 'application/json',
+218 silly registry.get     'cache-control': 'max-age=60',
+218 silly registry.get     'content-length': '50212',
+218 silly registry.get     'accept-ranges': 'bytes',
+218 silly registry.get     via: '1.1 varnish',
+218 silly registry.get     age: '32',
+218 silly registry.get     'x-served-by': 'cache-iad2125-IAD',
+218 silly registry.get     'x-cache': 'HIT',
+218 silly registry.get     'x-cache-hits': '1',
+218 silly registry.get     'x-timer': 'S1420087854.489974,VS0,VE0',
+218 silly registry.get     vary: 'Accept',
+218 silly registry.get     'keep-alive': 'timeout=10, max=50',
+218 silly registry.get     connection: 'Keep-Alive' } ]
+219 http 200 https://registry.npmjs.org/feedparser
+220 silly registry.get cb [ 200,
+220 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:54 GMT',
+220 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+220 silly registry.get     etag: '"4PDE8QG4TRVYSETUHDIQHJQ3G"',
+220 silly registry.get     'content-type': 'application/json',
+220 silly registry.get     'cache-control': 'max-age=60',
+220 silly registry.get     'content-length': '94264',
+220 silly registry.get     'accept-ranges': 'bytes',
+220 silly registry.get     via: '1.1 varnish',
+220 silly registry.get     age: '0',
+220 silly registry.get     'x-served-by': 'cache-iad2141-IAD',
+220 silly registry.get     'x-cache': 'MISS',
+220 silly registry.get     'x-cache-hits': '0',
+220 silly registry.get     'x-timer': 'S1420087854.568527,VS0,VE54',
+220 silly registry.get     vary: 'Accept',
+220 silly registry.get     'keep-alive': 'timeout=10, max=49',
+220 silly registry.get     connection: 'Keep-Alive' } ]
+221 http 200 https://registry.npmjs.org/jade
+222 silly registry.get cb [ 200,
+222 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:54 GMT',
+222 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+222 silly registry.get     etag: '"6JB6OJEY63KVMO86MV8VO2NQZ"',
+222 silly registry.get     'content-type': 'application/json',
+222 silly registry.get     'cache-control': 'max-age=60',
+222 silly registry.get     'content-length': '133829',
+222 silly registry.get     'accept-ranges': 'bytes',
+222 silly registry.get     via: '1.1 varnish',
+222 silly registry.get     age: '0',
+222 silly registry.get     'x-served-by': 'cache-iad2125-IAD',
+222 silly registry.get     'x-cache': 'HIT',
+222 silly registry.get     'x-cache-hits': '1',
+222 silly registry.get     'x-timer': 'S1420087854.612345,VS0,VE52',
+222 silly registry.get     vary: 'Accept',
+222 silly registry.get     'keep-alive': 'timeout=10, max=49',
+222 silly registry.get     connection: 'Keep-Alive' } ]
+223 http 200 https://registry.npmjs.org/cookie-parser
+224 silly registry.get cb [ 200,
+224 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:54 GMT',
+224 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+224 silly registry.get     etag: '"DDKJHDWHHJC6DWGLE2O7KQ8MK"',
+224 silly registry.get     'content-type': 'application/json',
+224 silly registry.get     'cache-control': 'max-age=60',
+224 silly registry.get     'content-length': '14236',
+224 silly registry.get     'accept-ranges': 'bytes',
+224 silly registry.get     via: '1.1 varnish',
+224 silly registry.get     age: '0',
+224 silly registry.get     'x-served-by': 'cache-iad2126-IAD',
+224 silly registry.get     'x-cache': 'HIT',
+224 silly registry.get     'x-cache-hits': '1',
+224 silly registry.get     'x-timer': 'S1420087854.482990,VS0,VE351',
+224 silly registry.get     vary: 'Accept',
+224 silly registry.get     'keep-alive': 'timeout=10, max=50',
+224 silly registry.get     connection: 'Keep-Alive' } ]
+225 http 200 https://registry.npmjs.org/bcryptjs
+226 silly registry.get cb [ 200,
+226 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:54 GMT',
+226 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+226 silly registry.get     etag: '"585QAF42Q3SUMCGJ9VXYB4E6Z"',
+226 silly registry.get     'content-type': 'application/json',
+226 silly registry.get     'cache-control': 'max-age=60',
+226 silly registry.get     'content-length': '43681',
+226 silly registry.get     'accept-ranges': 'bytes',
+226 silly registry.get     via: '1.1 varnish',
+226 silly registry.get     age: '0',
+226 silly registry.get     'x-served-by': 'cache-iad2132-IAD',
+226 silly registry.get     'x-cache': 'HIT',
+226 silly registry.get     'x-cache-hits': '1',
+226 silly registry.get     'x-timer': 'S1420087854.484270,VS0,VE349',
+226 silly registry.get     vary: 'Accept',
+226 silly registry.get     'keep-alive': 'timeout=10, max=50',
+226 silly registry.get     connection: 'Keep-Alive' } ]
+227 http 200 https://registry.npmjs.org/lodash
+228 silly registry.get cb [ 200,
+228 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:54 GMT',
+228 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+228 silly registry.get     etag: '"X7FXSXJ6EQE2WC6B0E9RI5KC"',
+228 silly registry.get     'content-type': 'application/json',
+228 silly registry.get     'cache-control': 'max-age=60',
+228 silly registry.get     'content-length': '74687',
+228 silly registry.get     'accept-ranges': 'bytes',
+228 silly registry.get     via: '1.1 varnish',
+228 silly registry.get     age: '10',
+228 silly registry.get     'x-served-by': 'cache-iad2141-IAD',
+228 silly registry.get     'x-cache': 'HIT',
+228 silly registry.get     'x-cache-hits': '1',
+228 silly registry.get     'x-timer': 'S1420087854.793527,VS0,VE0',
+228 silly registry.get     vary: 'Accept',
+228 silly registry.get     'keep-alive': 'timeout=10, max=48',
+228 silly registry.get     connection: 'Keep-Alive' } ]
+229 http 200 https://registry.npmjs.org/body-parser
+230 silly registry.get cb [ 200,
+230 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:54 GMT',
+230 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+230 silly registry.get     etag: '"7RJG5E2OT7H06D7IUXWZCBCJM"',
+230 silly registry.get     'content-type': 'application/json',
+230 silly registry.get     'cache-control': 'max-age=60',
+230 silly registry.get     'content-length': '75872',
+230 silly registry.get     'accept-ranges': 'bytes',
+230 silly registry.get     via: '1.1 varnish',
+230 silly registry.get     age: '0',
+230 silly registry.get     'x-served-by': 'cache-iad2145-IAD',
+230 silly registry.get     'x-cache': 'HIT',
+230 silly registry.get     'x-cache-hits': '1',
+230 silly registry.get     'x-timer': 'S1420087854.482430,VS0,VE353',
+230 silly registry.get     vary: 'Accept',
+230 silly registry.get     'keep-alive': 'timeout=10, max=50',
+230 silly registry.get     connection: 'Keep-Alive' } ]
+231 http 200 https://registry.npmjs.org/morgan
+232 silly registry.get cb [ 200,
+232 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:54 GMT',
+232 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+232 silly registry.get     etag: '"5GB169AIMOSXLXSBY1XBDUPBB"',
+232 silly registry.get     'content-type': 'application/json',
+232 silly registry.get     'cache-control': 'max-age=60',
+232 silly registry.get     'content-length': '33616',
+232 silly registry.get     'accept-ranges': 'bytes',
+232 silly registry.get     via: '1.1 varnish',
+232 silly registry.get     age: '0',
+232 silly registry.get     'x-served-by': 'cache-iad2126-IAD',
+232 silly registry.get     'x-cache': 'HIT',
+232 silly registry.get     'x-cache-hits': '1',
+232 silly registry.get     'x-timer': 'S1420087854.913388,VS0,VE50',
+232 silly registry.get     vary: 'Accept',
+232 silly registry.get     'keep-alive': 'timeout=10, max=49',
+232 silly registry.get     connection: 'Keep-Alive' } ]
+233 http 200 https://registry.npmjs.org/request
+234 silly registry.get cb [ 200,
+234 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:55 GMT',
+234 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+234 silly registry.get     etag: '"5S0MHU4OUB9MXDX7QYN0JACHG"',
+234 silly registry.get     'content-type': 'application/json',
+234 silly registry.get     'cache-control': 'max-age=60',
+234 silly registry.get     'content-length': '133237',
+234 silly registry.get     'accept-ranges': 'bytes',
+234 silly registry.get     via: '1.1 varnish',
+234 silly registry.get     age: '18',
+234 silly registry.get     'x-served-by': 'cache-iad2145-IAD',
+234 silly registry.get     'x-cache': 'HIT',
+234 silly registry.get     'x-cache-hits': '1',
+234 silly registry.get     'x-timer': 'S1420087855.057530,VS0,VE0',
+234 silly registry.get     vary: 'Accept',
+234 silly registry.get     'keep-alive': 'timeout=10, max=49',
+234 silly registry.get     connection: 'Keep-Alive' } ]
+235 http 200 https://registry.npmjs.org/mongoose
+236 silly registry.get cb [ 200,
+236 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:54 GMT',
+236 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+236 silly registry.get     etag: '"4571MHW5BRP2AY559MH8YRU76"',
+236 silly registry.get     'content-type': 'application/json',
+236 silly registry.get     'cache-control': 'max-age=60',
+236 silly registry.get     'content-length': '286581',
+236 silly registry.get     'accept-ranges': 'bytes',
+236 silly registry.get     via: '1.1 varnish',
+236 silly registry.get     age: '0',
+236 silly registry.get     'x-served-by': 'cache-iad2125-IAD',
+236 silly registry.get     'x-cache': 'HIT',
+236 silly registry.get     'x-cache-hits': '1',
+236 silly registry.get     'x-timer': 'S1420087854.901936,VS0,VE87',
+236 silly registry.get     vary: 'Accept',
+236 silly registry.get     'keep-alive': 'timeout=10, max=48',
+236 silly registry.get     connection: 'Keep-Alive' } ]
+237 http 200 https://registry.npmjs.org/string
+238 silly registry.get cb [ 200,
+238 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:55 GMT',
+238 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+238 silly registry.get     etag: '"7NBWL98ZBENH7HYEHB8PCVXWJ"',
+238 silly registry.get     'content-type': 'application/json',
+238 silly registry.get     'cache-control': 'max-age=60',
+238 silly registry.get     'content-length': '69213',
+238 silly registry.get     'accept-ranges': 'bytes',
+238 silly registry.get     via: '1.1 varnish',
+238 silly registry.get     age: '0',
+238 silly registry.get     'x-served-by': 'cache-iad2141-IAD',
+238 silly registry.get     'x-cache': 'HIT',
+238 silly registry.get     'x-cache-hits': '1',
+238 silly registry.get     'x-timer': 'S1420087855.050601,VS0,VE83',
+238 silly registry.get     vary: 'Accept',
+238 silly registry.get     'keep-alive': 'timeout=10, max=47',
+238 silly registry.get     connection: 'Keep-Alive' } ]
+239 http 200 https://registry.npmjs.org/method-override
+240 silly registry.get cb [ 200,
+240 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:55 GMT',
+240 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+240 silly registry.get     etag: '"B4VFHWMAU1XKKW5VKICYI4Y3S"',
+240 silly registry.get     'content-type': 'application/json',
+240 silly registry.get     'cache-control': 'max-age=60',
+240 silly registry.get     'content-length': '29060',
+240 silly registry.get     'accept-ranges': 'bytes',
+240 silly registry.get     via: '1.1 varnish',
+240 silly registry.get     age: '0',
+240 silly registry.get     'x-served-by': 'cache-iad2132-IAD',
+240 silly registry.get     'x-cache': 'HIT',
+240 silly registry.get     'x-cache-hits': '1',
+240 silly registry.get     'x-timer': 'S1420087855.011608,VS0,VE341',
+240 silly registry.get     vary: 'Accept',
+240 silly registry.get     'keep-alive': 'timeout=10, max=49',
+240 silly registry.get     connection: 'Keep-Alive' } ]
+241 http 200 https://registry.npmjs.org/static-favicon
+242 silly registry.get cb [ 200,
+242 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:55 GMT',
+242 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+242 silly registry.get     etag: '"1278I92ZARRZIMMDBQTG75NUC"',
+242 silly registry.get     'content-type': 'application/json',
+242 silly registry.get     'cache-control': 'max-age=60',
+242 silly registry.get     'content-length': '5209',
+242 silly registry.get     'accept-ranges': 'bytes',
+242 silly registry.get     via: '1.1 varnish',
+242 silly registry.get     age: '0',
+242 silly registry.get     'x-served-by': 'cache-iad2126-IAD',
+242 silly registry.get     'x-cache': 'HIT',
+242 silly registry.get     'x-cache-hits': '1',
+242 silly registry.get     'x-timer': 'S1420087855.085739,VS0,VE349',
+242 silly registry.get     vary: 'Accept',
+242 silly registry.get     'keep-alive': 'timeout=10, max=48',
+242 silly registry.get     connection: 'Keep-Alive' } ]
+243 http 200 https://registry.npmjs.org/gulp-sass
+244 silly registry.get cb [ 200,
+244 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:55 GMT',
+244 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+244 silly registry.get     etag: '"1NHYTN46FBHKQYXTR51X88IXG"',
+244 silly registry.get     'content-type': 'application/json',
+244 silly registry.get     'cache-control': 'max-age=60',
+244 silly registry.get     'content-length': '27162',
+244 silly registry.get     'accept-ranges': 'bytes',
+244 silly registry.get     via: '1.1 varnish',
+244 silly registry.get     age: '0',
+244 silly registry.get     'x-served-by': 'cache-iad2141-IAD',
+244 silly registry.get     'x-cache': 'HIT',
+244 silly registry.get     'x-cache-hits': '1',
+244 silly registry.get     'x-timer': 'S1420087855.353005,VS0,VE53',
+244 silly registry.get     vary: 'Accept',
+244 silly registry.get     'keep-alive': 'timeout=10, max=46',
+244 silly registry.get     connection: 'Keep-Alive' } ]
+245 http 200 https://registry.npmjs.org/socket.io
+246 silly registry.get cb [ 200,
+246 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:55 GMT',
+246 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+246 silly registry.get     etag: '"DSO0REGFP3A9VHG0TN3PSQK6J"',
+246 silly registry.get     'content-type': 'application/json',
+246 silly registry.get     'cache-control': 'max-age=60',
+246 silly registry.get     'content-length': '103155',
+246 silly registry.get     'accept-ranges': 'bytes',
+246 silly registry.get     via: '1.1 varnish',
+246 silly registry.get     age: '0',
+246 silly registry.get     'x-served-by': 'cache-iad2125-IAD',
+246 silly registry.get     'x-cache': 'HIT',
+246 silly registry.get     'x-cache-hits': '1',
+246 silly registry.get     'x-timer': 'S1420087855.348655,VS0,VE83',
+246 silly registry.get     vary: 'Accept',
+246 silly registry.get     'keep-alive': 'timeout=10, max=47',
+246 silly registry.get     connection: 'Keep-Alive' } ]
+247 http 200 https://registry.npmjs.org/express
+248 silly registry.get cb [ 200,
+248 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:55 GMT',
+248 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+248 silly registry.get     etag: '"84XDIY3MDVLQ335ZHMHRZ4UWN"',
+248 silly registry.get     'content-type': 'application/json',
+248 silly registry.get     'cache-control': 'max-age=60',
+248 silly registry.get     'content-length': '444812',
+248 silly registry.get     'accept-ranges': 'bytes',
+248 silly registry.get     via: '1.1 varnish',
+248 silly registry.get     age: '13',
+248 silly registry.get     'x-served-by': 'cache-iad2145-IAD',
+248 silly registry.get     'x-cache': 'HIT',
+248 silly registry.get     'x-cache-hits': '1',
+248 silly registry.get     'x-timer': 'S1420087855.250961,VS0,VE2',
+248 silly registry.get     vary: 'Accept',
+248 silly registry.get     'keep-alive': 'timeout=10, max=48',
+248 silly registry.get     connection: 'Keep-Alive' } ]
+249 http 200 https://registry.npmjs.org/gulp-plumber
+250 silly registry.get cb [ 200,
+250 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:55 GMT',
+250 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+250 silly registry.get     etag: '"BM3C35S8PJ7833LDFKL919TVP"',
+250 silly registry.get     'content-type': 'application/json',
+250 silly registry.get     'cache-control': 'max-age=60',
+250 silly registry.get     'content-length': '36341',
+250 silly registry.get     'accept-ranges': 'bytes',
+250 silly registry.get     via: '1.1 varnish',
+250 silly registry.get     age: '0',
+250 silly registry.get     'x-served-by': 'cache-iad2132-IAD',
+250 silly registry.get     'x-cache': 'MISS',
+250 silly registry.get     'x-cache-hits': '0',
+250 silly registry.get     'x-timer': 'S1420087855.468818,VS0,VE343',
+250 silly registry.get     vary: 'Accept',
+250 silly registry.get     'keep-alive': 'timeout=10, max=48',
+250 silly registry.get     connection: 'Keep-Alive' } ]
+251 http 200 https://registry.npmjs.org/gulp
+252 silly registry.get cb [ 200,
+252 silly registry.get   { date: 'Thu, 01 Jan 2015 04:50:55 GMT',
+252 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+252 silly registry.get     etag: '"EHZY2EMYAJH8N6ZWIEKX0MOH6"',
+252 silly registry.get     'content-type': 'application/json',
+252 silly registry.get     'cache-control': 'max-age=60',
+252 silly registry.get     'content-length': '96716',
+252 silly registry.get     'accept-ranges': 'bytes',
+252 silly registry.get     via: '1.1 varnish',
+252 silly registry.get     age: '0',
+252 silly registry.get     'x-served-by': 'cache-iad2126-IAD',
+252 silly registry.get     'x-cache': 'HIT',
+252 silly registry.get     'x-cache-hits': '1',
+252 silly registry.get     'x-timer': 'S1420087855.467567,VS0,VE353',
+252 silly registry.get     vary: 'Accept',
+252 silly registry.get     'keep-alive': 'timeout=10, max=47',
+252 silly registry.get     connection: 'Keep-Alive' } ]
+253 info outdated updating [ [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'debug',
+253 info outdated     '1.0.4',
+253 info outdated     '1.0.4',
+253 info outdated     '2.1.1',
+253 info outdated     '~1.0.4' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'moment',
+253 info outdated     '2.7.0',
+253 info outdated     '2.7.0',
+253 info outdated     '2.8.4',
+253 info outdated     '~2.7.0' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'feedparser',
+253 info outdated     '0.18.1',
+253 info outdated     '0.18.1',
+253 info outdated     '0.19.2',
+253 info outdated     '~0.18.1' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'jade',
+253 info outdated     '1.4.2',
+253 info outdated     '1.4.2',
+253 info outdated     '1.8.2',
+253 info outdated     '~1.4.2' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'cookie-parser',
+253 info outdated     '1.3.2',
+253 info outdated     '1.3.3',
+253 info outdated     '1.3.3',
+253 info outdated     '~1.3.2' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'bcryptjs',
+253 info outdated     '2.0.2',
+253 info outdated     '2.0.2',
+253 info outdated     '2.1.0',
+253 info outdated     '~2.0.2' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'morgan',
+253 info outdated     '1.2.2',
+253 info outdated     '1.2.3',
+253 info outdated     '1.5.1',
+253 info outdated     '~1.2.0' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'body-parser',
+253 info outdated     '1.5.2',
+253 info outdated     '1.5.2',
+253 info outdated     '1.10.0',
+253 info outdated     '~1.5.0' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'request',
+253 info outdated     '2.40.0',
+253 info outdated     '2.40.0',
+253 info outdated     '2.51.0',
+253 info outdated     '~2.40.0' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'mongoose',
+253 info outdated     '3.8.14',
+253 info outdated     '3.8.21',
+253 info outdated     '3.8.21',
+253 info outdated     '~3.8.13' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'string',
+253 info outdated     '1.9.1',
+253 info outdated     '1.9.1',
+253 info outdated     '3.0.0',
+253 info outdated     '~1.9.0' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'method-override',
+253 info outdated     '2.1.2',
+253 info outdated     '2.1.3',
+253 info outdated     '2.3.1',
+253 info outdated     '~2.1.1' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'static-favicon',
+253 info outdated     '1.0.2',
+253 info outdated     '1.0.2',
+253 info outdated     '2.0.0-alpha',
+253 info outdated     '~1.0.0' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'gulp-sass',
+253 info outdated     '0.7.2',
+253 info outdated     '0.7.3',
+253 info outdated     '1.2.4',
+253 info outdated     '^0.7.2' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'socket.io',
+253 info outdated     '1.0.6',
+253 info outdated     '1.0.6',
+253 info outdated     '1.2.1',
+253 info outdated     '1.0.6' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'express',
+253 info outdated     '4.5.1',
+253 info outdated     '4.5.1',
+253 info outdated     '4.10.6',
+253 info outdated     '~4.5.1' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'gulp-plumber',
+253 info outdated     '0.6.4',
+253 info outdated     '0.6.6',
+253 info outdated     '0.6.6',
+253 info outdated     '^0.6.4' ],
+253 info outdated   [ '/Users/oborden14/Documents/ForceReader',
+253 info outdated     'gulp',
+253 info outdated     '3.8.7',
+253 info outdated     '3.8.10',
+253 info outdated     '3.8.10',
+253 info outdated     '^3.8.7' ] ]
+254 verbose install where, what [ '/Users/oborden14/Documents/ForceReader', [ 'debug@1.0.4' ] ]
+255 verbose install where, what [ '/Users/oborden14/Documents/ForceReader', [ 'moment@2.7.0' ] ]
+256 verbose install where, what [ '/Users/oborden14/Documents/ForceReader',
+256 verbose install   [ 'feedparser@0.18.1' ] ]
+257 verbose install where, what [ '/Users/oborden14/Documents/ForceReader', [ 'jade@1.4.2' ] ]
+258 verbose install where, what [ '/Users/oborden14/Documents/ForceReader',
+258 verbose install   [ 'cookie-parser@1.3.3' ] ]
+259 verbose install where, what [ '/Users/oborden14/Documents/ForceReader',
+259 verbose install   [ 'bcryptjs@2.0.2' ] ]
+260 verbose install where, what [ '/Users/oborden14/Documents/ForceReader', [ 'morgan@1.2.3' ] ]
+261 verbose install where, what [ '/Users/oborden14/Documents/ForceReader',
+261 verbose install   [ 'body-parser@1.5.2' ] ]
+262 verbose install where, what [ '/Users/oborden14/Documents/ForceReader',
+262 verbose install   [ 'request@2.40.0' ] ]
+263 verbose install where, what [ '/Users/oborden14/Documents/ForceReader',
+263 verbose install   [ 'mongoose@3.8.21' ] ]
+264 verbose install where, what [ '/Users/oborden14/Documents/ForceReader', [ 'string@1.9.1' ] ]
+265 verbose install where, what [ '/Users/oborden14/Documents/ForceReader',
+265 verbose install   [ 'method-override@2.1.3' ] ]
+266 verbose install where, what [ '/Users/oborden14/Documents/ForceReader',
+266 verbose install   [ 'static-favicon@1.0.2' ] ]
+267 verbose install where, what [ '/Users/oborden14/Documents/ForceReader',
+267 verbose install   [ 'gulp-sass@0.7.3' ] ]
+268 verbose install where, what [ '/Users/oborden14/Documents/ForceReader',
+268 verbose install   [ 'socket.io@1.0.6' ] ]
+269 verbose install where, what [ '/Users/oborden14/Documents/ForceReader',
+269 verbose install   [ 'express@4.5.1' ] ]
+270 verbose install where, what [ '/Users/oborden14/Documents/ForceReader',
+270 verbose install   [ 'gulp-plumber@0.6.6' ] ]
+271 verbose install where, what [ '/Users/oborden14/Documents/ForceReader', [ 'gulp@3.8.10' ] ]
+272 silly cache add args [ 'debug@1.0.4', null ]
+273 verbose cache add spec debug@1.0.4
+274 silly cache add args [ 'moment@2.7.0', null ]
+275 verbose cache add spec moment@2.7.0
+276 silly cache add args [ 'feedparser@0.18.1', null ]
+277 verbose cache add spec feedparser@0.18.1
+278 silly cache add args [ 'jade@1.4.2', null ]
+279 verbose cache add spec jade@1.4.2
+280 silly cache add args [ 'cookie-parser@1.3.3', null ]
+281 verbose cache add spec cookie-parser@1.3.3
+282 silly cache add args [ 'bcryptjs@2.0.2', null ]
+283 verbose cache add spec bcryptjs@2.0.2
+284 silly cache add args [ 'morgan@1.2.3', null ]
+285 verbose cache add spec morgan@1.2.3
+286 silly cache add args [ 'body-parser@1.5.2', null ]
+287 verbose cache add spec body-parser@1.5.2
+288 silly cache add args [ 'request@2.40.0', null ]
+289 verbose cache add spec request@2.40.0
+290 silly cache add args [ 'mongoose@3.8.21', null ]
+291 verbose cache add spec mongoose@3.8.21
+292 silly cache add args [ 'string@1.9.1', null ]
+293 verbose cache add spec string@1.9.1
+294 silly cache add args [ 'method-override@2.1.3', null ]
+295 verbose cache add spec method-override@2.1.3
+296 silly cache add args [ 'static-favicon@1.0.2', null ]
+297 verbose cache add spec static-favicon@1.0.2
+298 silly cache add args [ 'gulp-sass@0.7.3', null ]
+299 verbose cache add spec gulp-sass@0.7.3
+300 silly cache add args [ 'socket.io@1.0.6', null ]
+301 verbose cache add spec socket.io@1.0.6
+302 silly cache add args [ 'express@4.5.1', null ]
+303 verbose cache add spec express@4.5.1
+304 silly cache add args [ 'gulp-plumber@0.6.6', null ]
+305 verbose cache add spec gulp-plumber@0.6.6
+306 silly cache add args [ 'gulp@3.8.10', null ]
+307 verbose cache add spec gulp@3.8.10
+308 silly cache add parsed spec { raw: 'debug@1.0.4',
+308 silly cache add   scope: null,
+308 silly cache add   name: 'debug',
+308 silly cache add   rawSpec: '1.0.4',
+308 silly cache add   spec: '1.0.4',
+308 silly cache add   type: 'version' }
+309 verbose addNamed debug@1.0.4
+310 verbose addNamed debug@1.0.4 not in flight; adding
+311 silly addNamed semver.valid 1.0.4
+312 silly addNamed semver.validRange 1.0.4
+313 verbose mapToRegistry name debug
+314 verbose mapToRegistry uri https://registry.npmjs.org/debug
+315 silly cache add parsed spec { raw: 'moment@2.7.0',
+315 silly cache add   scope: null,
+315 silly cache add   name: 'moment',
+315 silly cache add   rawSpec: '2.7.0',
+315 silly cache add   spec: '2.7.0',
+315 silly cache add   type: 'version' }
+316 verbose addNamed moment@2.7.0
+317 verbose addNamed moment@2.7.0 not in flight; adding
+318 silly addNamed semver.valid 2.7.0
+319 silly addNamed semver.validRange 2.7.0
+320 verbose mapToRegistry name moment
+321 verbose mapToRegistry uri https://registry.npmjs.org/moment
+322 silly cache add parsed spec { raw: 'feedparser@0.18.1',
+322 silly cache add   scope: null,
+322 silly cache add   name: 'feedparser',
+322 silly cache add   rawSpec: '0.18.1',
+322 silly cache add   spec: '0.18.1',
+322 silly cache add   type: 'version' }
+323 verbose addNamed feedparser@0.18.1
+324 verbose addNamed feedparser@0.18.1 not in flight; adding
+325 silly addNamed semver.valid 0.18.1
+326 silly addNamed semver.validRange 0.18.1
+327 verbose mapToRegistry name feedparser
+328 verbose mapToRegistry uri https://registry.npmjs.org/feedparser
+329 silly cache add parsed spec { raw: 'jade@1.4.2',
+329 silly cache add   scope: null,
+329 silly cache add   name: 'jade',
+329 silly cache add   rawSpec: '1.4.2',
+329 silly cache add   spec: '1.4.2',
+329 silly cache add   type: 'version' }
+330 verbose addNamed jade@1.4.2
+331 verbose addNamed jade@1.4.2 not in flight; adding
+332 silly addNamed semver.valid 1.4.2
+333 silly addNamed semver.validRange 1.4.2
+334 verbose mapToRegistry name jade
+335 verbose mapToRegistry uri https://registry.npmjs.org/jade
+336 silly cache add parsed spec { raw: 'cookie-parser@1.3.3',
+336 silly cache add   scope: null,
+336 silly cache add   name: 'cookie-parser',
+336 silly cache add   rawSpec: '1.3.3',
+336 silly cache add   spec: '1.3.3',
+336 silly cache add   type: 'version' }
+337 verbose addNamed cookie-parser@1.3.3
+338 verbose addNamed cookie-parser@1.3.3 not in flight; adding
+339 silly addNamed semver.valid 1.3.3
+340 silly addNamed semver.validRange 1.3.3
+341 verbose mapToRegistry name cookie-parser
+342 verbose mapToRegistry uri https://registry.npmjs.org/cookie-parser
+343 silly cache add parsed spec { raw: 'bcryptjs@2.0.2',
+343 silly cache add   scope: null,
+343 silly cache add   name: 'bcryptjs',
+343 silly cache add   rawSpec: '2.0.2',
+343 silly cache add   spec: '2.0.2',
+343 silly cache add   type: 'version' }
+344 verbose addNamed bcryptjs@2.0.2
+345 verbose addNamed bcryptjs@2.0.2 not in flight; adding
+346 silly addNamed semver.valid 2.0.2
+347 silly addNamed semver.validRange 2.0.2
+348 verbose mapToRegistry name bcryptjs
+349 verbose mapToRegistry uri https://registry.npmjs.org/bcryptjs
+350 silly cache add parsed spec { raw: 'morgan@1.2.3',
+350 silly cache add   scope: null,
+350 silly cache add   name: 'morgan',
+350 silly cache add   rawSpec: '1.2.3',
+350 silly cache add   spec: '1.2.3',
+350 silly cache add   type: 'version' }
+351 verbose addNamed morgan@1.2.3
+352 verbose addNamed morgan@1.2.3 not in flight; adding
+353 silly addNamed semver.valid 1.2.3
+354 silly addNamed semver.validRange 1.2.3
+355 verbose mapToRegistry name morgan
+356 verbose mapToRegistry uri https://registry.npmjs.org/morgan
+357 silly cache add parsed spec { raw: 'body-parser@1.5.2',
+357 silly cache add   scope: null,
+357 silly cache add   name: 'body-parser',
+357 silly cache add   rawSpec: '1.5.2',
+357 silly cache add   spec: '1.5.2',
+357 silly cache add   type: 'version' }
+358 verbose addNamed body-parser@1.5.2
+359 verbose addNamed body-parser@1.5.2 not in flight; adding
+360 silly addNamed semver.valid 1.5.2
+361 silly addNamed semver.validRange 1.5.2
+362 verbose mapToRegistry name body-parser
+363 verbose mapToRegistry uri https://registry.npmjs.org/body-parser
+364 silly cache add parsed spec { raw: 'request@2.40.0',
+364 silly cache add   scope: null,
+364 silly cache add   name: 'request',
+364 silly cache add   rawSpec: '2.40.0',
+364 silly cache add   spec: '2.40.0',
+364 silly cache add   type: 'version' }
+365 verbose addNamed request@2.40.0
+366 verbose addNamed request@2.40.0 not in flight; adding
+367 silly addNamed semver.valid 2.40.0
+368 silly addNamed semver.validRange 2.40.0
+369 verbose mapToRegistry name request
+370 verbose mapToRegistry uri https://registry.npmjs.org/request
+371 silly cache add parsed spec { raw: 'mongoose@3.8.21',
+371 silly cache add   scope: null,
+371 silly cache add   name: 'mongoose',
+371 silly cache add   rawSpec: '3.8.21',
+371 silly cache add   spec: '3.8.21',
+371 silly cache add   type: 'version' }
+372 verbose addNamed mongoose@3.8.21
+373 verbose addNamed mongoose@3.8.21 not in flight; adding
+374 silly addNamed semver.valid 3.8.21
+375 silly addNamed semver.validRange 3.8.21
+376 verbose mapToRegistry name mongoose
+377 verbose mapToRegistry uri https://registry.npmjs.org/mongoose
+378 silly cache add parsed spec { raw: 'string@1.9.1',
+378 silly cache add   scope: null,
+378 silly cache add   name: 'string',
+378 silly cache add   rawSpec: '1.9.1',
+378 silly cache add   spec: '1.9.1',
+378 silly cache add   type: 'version' }
+379 verbose addNamed string@1.9.1
+380 verbose addNamed string@1.9.1 not in flight; adding
+381 silly addNamed semver.valid 1.9.1
+382 silly addNamed semver.validRange 1.9.1
+383 verbose mapToRegistry name string
+384 verbose mapToRegistry uri https://registry.npmjs.org/string
+385 silly cache add parsed spec { raw: 'method-override@2.1.3',
+385 silly cache add   scope: null,
+385 silly cache add   name: 'method-override',
+385 silly cache add   rawSpec: '2.1.3',
+385 silly cache add   spec: '2.1.3',
+385 silly cache add   type: 'version' }
+386 verbose addNamed method-override@2.1.3
+387 verbose addNamed method-override@2.1.3 not in flight; adding
+388 silly addNamed semver.valid 2.1.3
+389 silly addNamed semver.validRange 2.1.3
+390 verbose mapToRegistry name method-override
+391 verbose mapToRegistry uri https://registry.npmjs.org/method-override
+392 silly cache add parsed spec { raw: 'static-favicon@1.0.2',
+392 silly cache add   scope: null,
+392 silly cache add   name: 'static-favicon',
+392 silly cache add   rawSpec: '1.0.2',
+392 silly cache add   spec: '1.0.2',
+392 silly cache add   type: 'version' }
+393 verbose addNamed static-favicon@1.0.2
+394 verbose addNamed static-favicon@1.0.2 not in flight; adding
+395 silly addNamed semver.valid 1.0.2
+396 silly addNamed semver.validRange 1.0.2
+397 verbose mapToRegistry name static-favicon
+398 verbose mapToRegistry uri https://registry.npmjs.org/static-favicon
+399 silly cache add parsed spec { raw: 'gulp-sass@0.7.3',
+399 silly cache add   scope: null,
+399 silly cache add   name: 'gulp-sass',
+399 silly cache add   rawSpec: '0.7.3',
+399 silly cache add   spec: '0.7.3',
+399 silly cache add   type: 'version' }
+400 verbose addNamed gulp-sass@0.7.3
+401 verbose addNamed gulp-sass@0.7.3 not in flight; adding
+402 silly addNamed semver.valid 0.7.3
+403 silly addNamed semver.validRange 0.7.3
+404 verbose mapToRegistry name gulp-sass
+405 verbose mapToRegistry uri https://registry.npmjs.org/gulp-sass
+406 silly cache add parsed spec { raw: 'socket.io@1.0.6',
+406 silly cache add   scope: null,
+406 silly cache add   name: 'socket.io',
+406 silly cache add   rawSpec: '1.0.6',
+406 silly cache add   spec: '1.0.6',
+406 silly cache add   type: 'version' }
+407 verbose addNamed socket.io@1.0.6
+408 verbose addNamed socket.io@1.0.6 not in flight; adding
+409 silly addNamed semver.valid 1.0.6
+410 silly addNamed semver.validRange 1.0.6
+411 verbose mapToRegistry name socket.io
+412 verbose mapToRegistry uri https://registry.npmjs.org/socket.io
+413 silly cache add parsed spec { raw: 'express@4.5.1',
+413 silly cache add   scope: null,
+413 silly cache add   name: 'express',
+413 silly cache add   rawSpec: '4.5.1',
+413 silly cache add   spec: '4.5.1',
+413 silly cache add   type: 'version' }
+414 verbose addNamed express@4.5.1
+415 verbose addNamed express@4.5.1 not in flight; adding
+416 silly addNamed semver.valid 4.5.1
+417 silly addNamed semver.validRange 4.5.1
+418 verbose mapToRegistry name express
+419 verbose mapToRegistry uri https://registry.npmjs.org/express
+420 silly cache add parsed spec { raw: 'gulp-plumber@0.6.6',
+420 silly cache add   scope: null,
+420 silly cache add   name: 'gulp-plumber',
+420 silly cache add   rawSpec: '0.6.6',
+420 silly cache add   spec: '0.6.6',
+420 silly cache add   type: 'version' }
+421 verbose addNamed gulp-plumber@0.6.6
+422 verbose addNamed gulp-plumber@0.6.6 not in flight; adding
+423 silly addNamed semver.valid 0.6.6
+424 silly addNamed semver.validRange 0.6.6
+425 verbose mapToRegistry name gulp-plumber
+426 verbose mapToRegistry uri https://registry.npmjs.org/gulp-plumber
+427 silly cache add parsed spec { raw: 'gulp@3.8.10',
+427 silly cache add   scope: null,
+427 silly cache add   name: 'gulp',
+427 silly cache add   rawSpec: '3.8.10',
+427 silly cache add   spec: '3.8.10',
+427 silly cache add   type: 'version' }
+428 verbose addNamed gulp@3.8.10
+429 verbose addNamed gulp@3.8.10 not in flight; adding
+430 silly addNamed semver.valid 3.8.10
+431 silly addNamed semver.validRange 3.8.10
+432 verbose mapToRegistry name gulp
+433 verbose mapToRegistry uri https://registry.npmjs.org/gulp
+434 verbose registry.get https://registry.npmjs.org/debug not expired, no request
+435 verbose registry.get https://registry.npmjs.org/moment not expired, no request
+436 verbose registry.get https://registry.npmjs.org/feedparser not expired, no request
+437 verbose registry.get https://registry.npmjs.org/cookie-parser not expired, no request
+438 verbose registry.get https://registry.npmjs.org/jade not expired, no request
+439 verbose registry.get https://registry.npmjs.org/bcryptjs not expired, no request
+440 verbose registry.get https://registry.npmjs.org/morgan not expired, no request
+441 verbose registry.get https://registry.npmjs.org/body-parser not expired, no request
+442 verbose registry.get https://registry.npmjs.org/method-override not expired, no request
+443 verbose registry.get https://registry.npmjs.org/gulp-sass not expired, no request
+444 verbose registry.get https://registry.npmjs.org/static-favicon not expired, no request
+445 warn deprecated static-favicon@1.0.2: use serve-favicon module
+446 verbose registry.get https://registry.npmjs.org/mongoose not expired, no request
+447 verbose registry.get https://registry.npmjs.org/string not expired, no request
+448 verbose registry.get https://registry.npmjs.org/request not expired, no request
+449 verbose registry.get https://registry.npmjs.org/gulp-plumber not expired, no request
+450 verbose registry.get https://registry.npmjs.org/socket.io not expired, no request
+451 verbose addRemoteTarball https://registry.npmjs.org/gulp-sass/-/gulp-sass-0.7.3.tgz not in flight; adding
+452 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-sass/-/gulp-sass-0.7.3.tgz',
+452 verbose addRemoteTarball   '4bfbb4e4d95a40be8beeebe07e8e477e7f7a2edc' ]
+453 verbose addRemoteTarball https://registry.npmjs.org/mongoose/-/mongoose-3.8.21.tgz not in flight; adding
+454 verbose addRemoteTarball [ 'https://registry.npmjs.org/mongoose/-/mongoose-3.8.21.tgz',
+454 verbose addRemoteTarball   'ba96d6e73b7b73a5c133ca886de316994df2a2f0' ]
+455 verbose registry.get https://registry.npmjs.org/express not expired, no request
+456 verbose addRemoteTarball https://registry.npmjs.org/gulp-plumber/-/gulp-plumber-0.6.6.tgz not in flight; adding
+457 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-plumber/-/gulp-plumber-0.6.6.tgz',
+457 verbose addRemoteTarball   '9f9846a513c70d03216ce7a2a8ce6fd5a3fc3175' ]
+458 verbose registry.get https://registry.npmjs.org/gulp not expired, no request
+459 verbose addRemoteTarball https://registry.npmjs.org/gulp/-/gulp-3.8.10.tgz not in flight; adding
+460 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp/-/gulp-3.8.10.tgz',
+460 verbose addRemoteTarball   'bfb8fc156be97820f02a7f8b3af61a86666f9e31' ]
+461 verbose afterAdd /Users/oborden14/.npm/moment/2.7.0/package/package.json not in flight; writing
+462 verbose afterAdd /Users/oborden14/.npm/feedparser/0.18.1/package/package.json not in flight; writing
+463 verbose afterAdd /Users/oborden14/.npm/debug/1.0.4/package/package.json not in flight; writing
+464 verbose afterAdd /Users/oborden14/.npm/jade/1.4.2/package/package.json not in flight; writing
+465 verbose afterAdd /Users/oborden14/.npm/method-override/2.1.3/package/package.json not in flight; writing
+466 verbose afterAdd /Users/oborden14/.npm/body-parser/1.5.2/package/package.json not in flight; writing
+467 verbose afterAdd /Users/oborden14/.npm/morgan/1.2.3/package/package.json not in flight; writing
+468 verbose afterAdd /Users/oborden14/.npm/cookie-parser/1.3.3/package/package.json not in flight; writing
+469 verbose afterAdd /Users/oborden14/.npm/request/2.40.0/package/package.json not in flight; writing
+470 verbose afterAdd /Users/oborden14/.npm/bcryptjs/2.0.2/package/package.json not in flight; writing
+471 verbose afterAdd /Users/oborden14/.npm/static-favicon/1.0.2/package/package.json not in flight; writing
+472 verbose afterAdd /Users/oborden14/.npm/socket.io/1.0.6/package/package.json not in flight; writing
+473 verbose afterAdd /Users/oborden14/.npm/string/1.9.1/package/package.json not in flight; writing
+474 info retry fetch attempt 1 at 23:50:56
+475 info attempt registry request try #1 at 23:50:56
+476 http fetch GET https://registry.npmjs.org/gulp-sass/-/gulp-sass-0.7.3.tgz
+477 verbose afterAdd /Users/oborden14/.npm/express/4.5.1/package/package.json not in flight; writing
+478 info retry fetch attempt 1 at 23:50:56
+479 info attempt registry request try #1 at 23:50:56
+480 http fetch GET https://registry.npmjs.org/gulp/-/gulp-3.8.10.tgz
+481 info retry fetch attempt 1 at 23:50:56
+482 info attempt registry request try #1 at 23:50:56
+483 http fetch GET https://registry.npmjs.org/mongoose/-/mongoose-3.8.21.tgz
+484 info retry fetch attempt 1 at 23:50:56
+485 info attempt registry request try #1 at 23:50:56
+486 http fetch GET https://registry.npmjs.org/gulp-plumber/-/gulp-plumber-0.6.6.tgz
+487 silly install resolved [ { name: 'method-override',
+487 silly install resolved     description: 'Override HTTP verbs',
+487 silly install resolved     version: '2.1.3',
+487 silly install resolved     author:
+487 silly install resolved      { name: 'Jonathan Ong',
+487 silly install resolved        email: 'me@jongleberry.com',
+487 silly install resolved        url: 'http://jongleberry.com' },
+487 silly install resolved     contributors: [ [Object] ],
+487 silly install resolved     license: 'MIT',
+487 silly install resolved     repository:
+487 silly install resolved      { type: 'git',
+487 silly install resolved        url: 'https://github.com/expressjs/method-override' },
+487 silly install resolved     dependencies:
+487 silly install resolved      { debug: '1.0.4',
+487 silly install resolved        methods: '1.1.0',
+487 silly install resolved        parseurl: '~1.3.0',
+487 silly install resolved        vary: '~1.0.0' },
+487 silly install resolved     devDependencies: { istanbul: '0.3.0', mocha: '~1.21.4', supertest: '~0.13.0' },
+487 silly install resolved     engines: { node: '>= 0.8.0' },
+487 silly install resolved     scripts:
+487 silly install resolved      { test: 'mocha --check-leaks --reporter spec --bail test/',
+487 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/',
+487 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec test/' },
+487 silly install resolved     gitHead: '136ae0ed23ba7042572f5ce3474fc760a4fe6c84',
+487 silly install resolved     bugs: { url: 'https://github.com/expressjs/method-override/issues' },
+487 silly install resolved     homepage: 'https://github.com/expressjs/method-override',
+487 silly install resolved     _id: 'method-override@2.1.3',
+487 silly install resolved     _shasum: '511f41c4fb1dccdb6ab1844da5dc6ea81b7c1135',
+487 silly install resolved     _from: 'method-override@2.1.3',
+487 silly install resolved     _npmVersion: '1.4.21',
+487 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+487 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+487 silly install resolved     dist:
+487 silly install resolved      { shasum: '511f41c4fb1dccdb6ab1844da5dc6ea81b7c1135',
+487 silly install resolved        tarball: 'http://registry.npmjs.org/method-override/-/method-override-2.1.3.tgz' },
+487 silly install resolved     directories: {},
+487 silly install resolved     _resolved: 'https://registry.npmjs.org/method-override/-/method-override-2.1.3.tgz',
+487 silly install resolved     readme: 'ERROR: No README data found!' } ]
+488 info install method-override@2.1.3 into /Users/oborden14/Documents/ForceReader
+489 info installOne method-override@2.1.3
+490 silly install resolved [ { name: 'debug',
+490 silly install resolved     version: '1.0.4',
+490 silly install resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/debug.git' },
+490 silly install resolved     description: 'small debugging utility',
+490 silly install resolved     keywords: [ 'debug', 'log', 'debugger' ],
+490 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+490 silly install resolved     contributors: [ [Object] ],
+490 silly install resolved     dependencies: { ms: '0.6.2' },
+490 silly install resolved     devDependencies: { browserify: '4.1.6', mocha: '*' },
+490 silly install resolved     main: './node.js',
+490 silly install resolved     browser: './browser.js',
+490 silly install resolved     component: { scripts: [Object] },
+490 silly install resolved     gitHead: 'abc10a5912f79d251752d18350e269fe0b0fbbf9',
+490 silly install resolved     bugs: { url: 'https://github.com/visionmedia/debug/issues' },
+490 silly install resolved     homepage: 'https://github.com/visionmedia/debug',
+490 silly install resolved     _id: 'debug@1.0.4',
+490 silly install resolved     scripts: {},
+490 silly install resolved     _shasum: '5b9c256bd54b6ec02283176fa8a0ede6d154cbf8',
+490 silly install resolved     _from: 'debug@1.0.4',
+490 silly install resolved     _npmVersion: '1.4.14',
+490 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+490 silly install resolved     maintainers: [ [Object], [Object] ],
+490 silly install resolved     dist:
+490 silly install resolved      { shasum: '5b9c256bd54b6ec02283176fa8a0ede6d154cbf8',
+490 silly install resolved        tarball: 'http://registry.npmjs.org/debug/-/debug-1.0.4.tgz' },
+490 silly install resolved     directories: {},
+490 silly install resolved     _resolved: 'https://registry.npmjs.org/debug/-/debug-1.0.4.tgz',
+490 silly install resolved     readme: 'ERROR: No README data found!' } ]
+491 info install debug@1.0.4 into /Users/oborden14/Documents/ForceReader
+492 info installOne debug@1.0.4
+493 silly install resolved [ { name: 'moment',
+493 silly install resolved     version: '2.7.0',
+493 silly install resolved     description: 'Parse, manipulate, and display dates.',
+493 silly install resolved     homepage: 'http://momentjs.com',
+493 silly install resolved     author:
+493 silly install resolved      { name: 'Iskren Ivov Chernev',
+493 silly install resolved        email: 'iskren.chernev@gmail.com',
+493 silly install resolved        url: 'https://github.com/ichernev' },
+493 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+493 silly install resolved     keywords:
+493 silly install resolved      [ 'moment',
+493 silly install resolved        'date',
+493 silly install resolved        'time',
+493 silly install resolved        'parse',
+493 silly install resolved        'format',
+493 silly install resolved        'validate',
+493 silly install resolved        'i18n',
+493 silly install resolved        'l10n',
+493 silly install resolved        'ender' ],
+493 silly install resolved     main: './moment.js',
+493 silly install resolved     engines: { node: '*' },
+493 silly install resolved     repository: { type: 'git', url: 'https://github.com/moment/moment.git' },
+493 silly install resolved     bugs: { url: 'https://github.com/moment/moment/issues' },
+493 silly install resolved     licenses: [ [Object] ],
+493 silly install resolved     devDependencies:
+493 silly install resolved      { 'uglify-js': 'latest',
+493 silly install resolved        grunt: 'latest',
+493 silly install resolved        nodeunit: 'latest',
+493 silly install resolved        'grunt-contrib-jshint': 'latest',
+493 silly install resolved        'grunt-contrib-nodeunit': 'latest',
+493 silly install resolved        'grunt-contrib-concat': 'latest',
+493 silly install resolved        'grunt-contrib-uglify': 'latest',
+493 silly install resolved        'grunt-contrib-watch': 'latest',
+493 silly install resolved        'grunt-env': 'latest',
+493 silly install resolved        'grunt-karma': 'latest',
+493 silly install resolved        'load-grunt-tasks': 'latest',
+493 silly install resolved        karma: 'latest',
+493 silly install resolved        'karma-chrome-launcher': 'latest',
+493 silly install resolved        'karma-firefox-launcher': 'latest',
+493 silly install resolved        'karma-nodeunit': 'latest',
+493 silly install resolved        'karma-sauce-launcher': 'latest' },
+493 silly install resolved     scripts: { test: 'grunt test:node' },
+493 silly install resolved     ender: './ender.js',
+493 silly install resolved     dojoBuild: 'package.js',
+493 silly install resolved     jspm: { files: [Object], map: [Object], buildConfig: [Object] },
+493 silly install resolved     spm: { main: 'moment.js', output: [Object] },
+493 silly install resolved     _id: 'moment@2.7.0',
+493 silly install resolved     dist:
+493 silly install resolved      { shasum: '359a19ec634cda3c706c8709adda54c0329aaec4',
+493 silly install resolved        tarball: 'http://registry.npmjs.org/moment/-/moment-2.7.0.tgz' },
+493 silly install resolved     _from: 'moment@2.7.0',
+493 silly install resolved     _npmVersion: '1.4.6',
+493 silly install resolved     _npmUser: { name: 'ichernev', email: 'iskren.chernev@gmail.com' },
+493 silly install resolved     maintainers: [ [Object], [Object] ],
+493 silly install resolved     directories: {},
+493 silly install resolved     _shasum: '359a19ec634cda3c706c8709adda54c0329aaec4',
+493 silly install resolved     _resolved: 'https://registry.npmjs.org/moment/-/moment-2.7.0.tgz',
+493 silly install resolved     readme: 'ERROR: No README data found!' } ]
+494 info install moment@2.7.0 into /Users/oborden14/Documents/ForceReader
+495 info installOne moment@2.7.0
+496 silly install resolved [ { name: 'feedparser',
+496 silly install resolved     author: { name: 'Dan MacTough', email: 'danmactough@gmail.com' },
+496 silly install resolved     description: 'Robust RSS Atom and RDF feed parsing using sax js',
+496 silly install resolved     version: '0.18.1',
+496 silly install resolved     keywords:
+496 silly install resolved      [ 'rss',
+496 silly install resolved        'feed',
+496 silly install resolved        'atom',
+496 silly install resolved        'rdf',
+496 silly install resolved        'xml',
+496 silly install resolved        'syndication',
+496 silly install resolved        'rsscloud',
+496 silly install resolved        'pubsubhubbub' ],
+496 silly install resolved     homepage: 'http://github.com/danmactough/node-feedparser',
+496 silly install resolved     repository:
+496 silly install resolved      { type: 'git',
+496 silly install resolved        url: 'git://github.com/danmactough/node-feedparser.git' },
+496 silly install resolved     bugs: { url: 'http://github.com/danmactough/node-feedparser/issues' },
+496 silly install resolved     main: './main.js',
+496 silly install resolved     engines: { node: '>= 0.8.0' },
+496 silly install resolved     dependencies:
+496 silly install resolved      { sax: '~0.6.0',
+496 silly install resolved        addressparser: '~0.1.3',
+496 silly install resolved        'array-indexofobject': '~0.0.1',
+496 silly install resolved        'readable-stream': '~1.0.17',
+496 silly install resolved        resanitize: '~0.3.0' },
+496 silly install resolved     devDependencies: { mocha: '1.x', request: '2.27.x', iconv: '2.0.x' },
+496 silly install resolved     scripts: { test: './node_modules/mocha/bin/mocha' },
+496 silly install resolved     gitHead: '7f1a82ca934f4d42ab681211c9c21792e10e2dfb',
+496 silly install resolved     _id: 'feedparser@0.18.1',
+496 silly install resolved     _shasum: '293ea2f9b6768352fd9e581e38f51fbd05004e6f',
+496 silly install resolved     _from: 'feedparser@0.18.1',
+496 silly install resolved     _npmVersion: '1.4.13',
+496 silly install resolved     _npmUser: { name: 'danmactough', email: 'danmactough@gmail.com' },
+496 silly install resolved     maintainers: [ [Object] ],
+496 silly install resolved     dist:
+496 silly install resolved      { shasum: '293ea2f9b6768352fd9e581e38f51fbd05004e6f',
+496 silly install resolved        tarball: 'http://registry.npmjs.org/feedparser/-/feedparser-0.18.1.tgz' },
+496 silly install resolved     directories: {},
+496 silly install resolved     _resolved: 'https://registry.npmjs.org/feedparser/-/feedparser-0.18.1.tgz',
+496 silly install resolved     readme: 'ERROR: No README data found!' } ]
+497 info install feedparser@0.18.1 into /Users/oborden14/Documents/ForceReader
+498 info installOne feedparser@0.18.1
+499 silly install resolved [ { name: 'jade',
+499 silly install resolved     description: 'Jade template engine',
+499 silly install resolved     version: '1.4.2',
+499 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+499 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+499 silly install resolved     license: 'MIT',
+499 silly install resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/jade' },
+499 silly install resolved     main: './index.js',
+499 silly install resolved     bin: { jade: './bin/jade.js' },
+499 silly install resolved     dependencies:
+499 silly install resolved      { commander: '2.1.0',
+499 silly install resolved        mkdirp: '~0.5.0',
+499 silly install resolved        transformers: '2.1.0',
+499 silly install resolved        'character-parser': '1.2.0',
+499 silly install resolved        monocle: '1.1.51',
+499 silly install resolved        with: '~3.0.0',
+499 silly install resolved        constantinople: '~2.0.0' },
+499 silly install resolved     devDependencies:
+499 silly install resolved      { 'coffee-script': '*',
+499 silly install resolved        mocha: '*',
+499 silly install resolved        istanbul: '*',
+499 silly install resolved        markdown: '*',
+499 silly install resolved        stylus: '*',
+499 silly install resolved        should: '*',
+499 silly install resolved        less: '*',
+499 silly install resolved        'uglify-js': '*',
+499 silly install resolved        browserify: '*',
+499 silly install resolved        linify: '*',
+499 silly install resolved        'less-file': '0.0.8',
+499 silly install resolved        express: '~3.4.8',
+499 silly install resolved        'browserify-middleware': '~2.4.0',
+499 silly install resolved        twbs: '0.0.6',
+499 silly install resolved        'highlight-codemirror': '~3.20.0',
+499 silly install resolved        inconsolata: '0.0.2',
+499 silly install resolved        'jade-code-mirror': '~1.0.5',
+499 silly install resolved        'code-mirror': '~3.22.0',
+499 silly install resolved        handle: '~1.0.0',
+499 silly install resolved        'jade-highlighter': '~1.0.5',
+499 silly install resolved        marked: '~0.3.2',
+499 silly install resolved        stop: '^3.0.0-rc1',
+499 silly install resolved        opener: '^1.3.0',
+499 silly install resolved        'github-basic': '^3.0.0',
+499 silly install resolved        'pull-request': '^3.0.0',
+499 silly install resolved        lsr: '^1.0.0',
+499 silly install resolved        rimraf: '^2.2.8' },
+499 silly install resolved     component: { scripts: [Object] },
+499 silly install resolved     scripts:
+499 silly install resolved      { test: 'mocha -R spec && npm run coverage',
+499 silly install resolved        coverage: 'istanbul cover node_modules/mocha/bin/_mocha',
+499 silly install resolved        prepublish: 'npm prune && linify transform bin && npm run build',
+499 silly install resolved        build: 'npm run compile',
+499 silly install resolved        compile: 'npm run compile-full && npm run compile-runtime',
+499 silly install resolved        'compile-full': 'browserify ./lib/jade.js --standalone jade -x ./node_modules/transformers > jade.js',
+499 silly install resolved        'compile-runtime': 'browserify ./lib/runtime.js --standalone jade > runtime.js' },
+499 silly install resolved     browser: { './lib/filters.js': './lib/filters-client.js' },
+499 silly install resolved     bugs: { url: 'https://github.com/visionmedia/jade/issues' },
+499 silly install resolved     homepage: 'https://github.com/visionmedia/jade',
+499 silly install resolved     _id: 'jade@1.4.2',
+499 silly install resolved     dist:
+499 silly install resolved      { shasum: '39f8ae013df19a317cf43063882ea737f9593c16',
+499 silly install resolved        tarball: 'http://registry.npmjs.org/jade/-/jade-1.4.2.tgz' },
+499 silly install resolved     _from: 'jade@1.4.2',
+499 silly install resolved     _npmVersion: '1.3.21',
+499 silly install resolved     _npmUser: { name: 'forbeslindesay', email: 'forbes@lindesay.co.uk' },
+499 silly install resolved     directories: {},
+499 silly install resolved     _shasum: '39f8ae013df19a317cf43063882ea737f9593c16',
+499 silly install resolved     _resolved: 'https://registry.npmjs.org/jade/-/jade-1.4.2.tgz',
+499 silly install resolved     readme: 'ERROR: No README data found!' } ]
+500 info install jade@1.4.2 into /Users/oborden14/Documents/ForceReader
+501 info installOne jade@1.4.2
+502 silly install resolved [ { name: 'body-parser',
+502 silly install resolved     description: 'Node.js body parsing middleware',
+502 silly install resolved     version: '1.5.2',
+502 silly install resolved     author:
+502 silly install resolved      { name: 'Jonathan Ong',
+502 silly install resolved        email: 'me@jongleberry.com',
+502 silly install resolved        url: 'http://jongleberry.com' },
+502 silly install resolved     contributors: [ [Object] ],
+502 silly install resolved     license: 'MIT',
+502 silly install resolved     repository: { type: 'git', url: 'git://github.com/expressjs/body-parser' },
+502 silly install resolved     dependencies:
+502 silly install resolved      { bytes: '1.0.0',
+502 silly install resolved        depd: '0.4.4',
+502 silly install resolved        'iconv-lite': '0.4.4',
+502 silly install resolved        'media-typer': '0.2.0',
+502 silly install resolved        qs: '0.6.6',
+502 silly install resolved        'raw-body': '1.3.0',
+502 silly install resolved        'type-is': '~1.3.2' },
+502 silly install resolved     devDependencies:
+502 silly install resolved      { istanbul: '0.3.0',
+502 silly install resolved        mocha: '~1.21.0',
+502 silly install resolved        should: '~4.0.4',
+502 silly install resolved        supertest: '~0.13.0' },
+502 silly install resolved     engines: { node: '>= 0.8' },
+502 silly install resolved     scripts:
+502 silly install resolved      { test: 'mocha --require should --require test/support/env --reporter spec --check-leaks --bail test/',
+502 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --reporter dot --check-leaks test/',
+502 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --reporter spec --check-leaks test/' },
+502 silly install resolved     bugs: { url: 'https://github.com/expressjs/body-parser/issues' },
+502 silly install resolved     homepage: 'https://github.com/expressjs/body-parser',
+502 silly install resolved     _id: 'body-parser@1.5.2',
+502 silly install resolved     dist:
+502 silly install resolved      { shasum: 'beebacac741b83f62c9137d5685196e1a44304ab',
+502 silly install resolved        tarball: 'http://registry.npmjs.org/body-parser/-/body-parser-1.5.2.tgz' },
+502 silly install resolved     _from: 'body-parser@1.5.2',
+502 silly install resolved     _npmVersion: '1.4.3',
+502 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+502 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+502 silly install resolved     directories: {},
+502 silly install resolved     _shasum: 'beebacac741b83f62c9137d5685196e1a44304ab',
+502 silly install resolved     _resolved: 'https://registry.npmjs.org/body-parser/-/body-parser-1.5.2.tgz',
+502 silly install resolved     readme: 'ERROR: No README data found!' } ]
+503 info install body-parser@1.5.2 into /Users/oborden14/Documents/ForceReader
+504 info installOne body-parser@1.5.2
+505 silly install resolved [ { name: 'bcryptjs',
+505 silly install resolved     description: 'Optimized bcrypt in plain JavaScript with zero dependencies. Compatible to \'bcrypt\'.',
+505 silly install resolved     version: '2.0.2',
+505 silly install resolved     author: { name: 'Daniel Wirtz', email: 'dcode@dcode.io' },
+505 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+505 silly install resolved     repository: { type: 'url', url: 'https://github.com/dcodeIO/bcrypt.js.git' },
+505 silly install resolved     bugs: { url: 'https://github.com/dcodeIO/bcrypt.js/issues' },
+505 silly install resolved     keywords:
+505 silly install resolved      [ 'bcrypt',
+505 silly install resolved        'password',
+505 silly install resolved        'auth',
+505 silly install resolved        'authentication',
+505 silly install resolved        'encryption',
+505 silly install resolved        'crypt',
+505 silly install resolved        'crypto' ],
+505 silly install resolved     main: 'index.js',
+505 silly install resolved     browser: 'dist/bcrypt-isaac.js',
+505 silly install resolved     dependencies: {},
+505 silly install resolved     devDependencies:
+505 silly install resolved      { testjs: '~1',
+505 silly install resolved        closurecompiler: '~1',
+505 silly install resolved        metascript: '~0.18',
+505 silly install resolved        bcrypt: 'latest',
+505 silly install resolved        utfx: '~1' },
+505 silly install resolved     licenses: [ [Object] ],
+505 silly install resolved     scripts:
+505 silly install resolved      { test: 'node node_modules/testjs/bin/testjs',
+505 silly install resolved        build: 'node scripts/build.js',
+505 silly install resolved        compile: 'ccjs dist/bcrypt.js --compilation_level=ADVANCED_OPTIMIZATIONS --externs=externs/minimal-env.js --output_wrapper="(function(){%output%})();" > dist/bcrypt.min.js',
+505 silly install resolved        'compile-isaac': 'ccjs dist/bcrypt-isaac.js --compilation_level=ADVANCED_OPTIMIZATIONS --externs=externs/minimal-env.js --output_wrapper="(function(){%output%})();" > dist/bcrypt-isaac.min.js',
+505 silly install resolved        make: 'npm run-script build && npm run-script compile && npm run-script compile-isaac && npm test' },
+505 silly install resolved     homepage: 'https://github.com/dcodeIO/bcrypt.js',
+505 silly install resolved     _id: 'bcryptjs@2.0.2',
+505 silly install resolved     _shasum: '1cef0376a70190d3bb584df1c0740dbde2bca747',
+505 silly install resolved     _from: 'bcryptjs@2.0.2',
+505 silly install resolved     _npmVersion: '1.4.9',
+505 silly install resolved     _npmUser: { name: 'dcode', email: 'dcode@dcode.io' },
+505 silly install resolved     maintainers: [ [Object] ],
+505 silly install resolved     dist:
+505 silly install resolved      { shasum: '1cef0376a70190d3bb584df1c0740dbde2bca747',
+505 silly install resolved        tarball: 'http://registry.npmjs.org/bcryptjs/-/bcryptjs-2.0.2.tgz' },
+505 silly install resolved     directories: {},
+505 silly install resolved     _resolved: 'https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.0.2.tgz',
+505 silly install resolved     readme: 'ERROR: No README data found!' } ]
+506 info install bcryptjs@2.0.2 into /Users/oborden14/Documents/ForceReader
+507 info installOne bcryptjs@2.0.2
+508 silly install resolved [ { name: 'morgan',
+508 silly install resolved     description: 'http request logger middleware for node.js',
+508 silly install resolved     version: '1.2.3',
+508 silly install resolved     author:
+508 silly install resolved      { name: 'Jonathan Ong',
+508 silly install resolved        email: 'me@jongleberry.com',
+508 silly install resolved        url: 'http://jongleberry.com' },
+508 silly install resolved     contributors: [ [Object] ],
+508 silly install resolved     license: 'MIT',
+508 silly install resolved     repository: { type: 'git', url: 'https://github.com/expressjs/morgan' },
+508 silly install resolved     dependencies:
+508 silly install resolved      { 'basic-auth': '1.0.0',
+508 silly install resolved        bytes: '1.0.0',
+508 silly install resolved        depd: '0.4.4',
+508 silly install resolved        'on-finished': '2.1.0' },
+508 silly install resolved     devDependencies:
+508 silly install resolved      { istanbul: '0.3.0',
+508 silly install resolved        mocha: '~1.21.0',
+508 silly install resolved        should: '~4.0.4',
+508 silly install resolved        supertest: '~0.13.0' },
+508 silly install resolved     engines: { node: '>= 0.8.0' },
+508 silly install resolved     scripts:
+508 silly install resolved      { test: 'mocha --check-leaks --reporter spec --bail',
+508 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot',
+508 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec' },
+508 silly install resolved     gitHead: '733e01ec43b0b25c1a2b6bd1a6d3e5ca845ac95a',
+508 silly install resolved     bugs: { url: 'https://github.com/expressjs/morgan/issues' },
+508 silly install resolved     homepage: 'https://github.com/expressjs/morgan',
+508 silly install resolved     _id: 'morgan@1.2.3',
+508 silly install resolved     _shasum: '3b0f1704df90255a542591abacd797891a8c40a1',
+508 silly install resolved     _from: 'morgan@1.2.3',
+508 silly install resolved     _npmVersion: '1.4.21',
+508 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+508 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+508 silly install resolved     dist:
+508 silly install resolved      { shasum: '3b0f1704df90255a542591abacd797891a8c40a1',
+508 silly install resolved        tarball: 'http://registry.npmjs.org/morgan/-/morgan-1.2.3.tgz' },
+508 silly install resolved     directories: {},
+508 silly install resolved     _resolved: 'https://registry.npmjs.org/morgan/-/morgan-1.2.3.tgz',
+508 silly install resolved     readme: 'ERROR: No README data found!' } ]
+509 info install morgan@1.2.3 into /Users/oborden14/Documents/ForceReader
+510 info installOne morgan@1.2.3
+511 silly install resolved [ { name: 'request',
+511 silly install resolved     description: 'Simplified HTTP request client.',
+511 silly install resolved     tags: [ 'http', 'simple', 'util', 'utility' ],
+511 silly install resolved     version: '2.40.0',
+511 silly install resolved     author: { name: 'Mikeal Rogers', email: 'mikeal.rogers@gmail.com' },
+511 silly install resolved     repository: { type: 'git', url: 'https://github.com/mikeal/request.git' },
+511 silly install resolved     bugs: { url: 'http://github.com/mikeal/request/issues' },
+511 silly install resolved     license: 'Apache-2.0',
+511 silly install resolved     engines: [ 'node >= 0.8.0' ],
+511 silly install resolved     main: 'index.js',
+511 silly install resolved     dependencies:
+511 silly install resolved      { qs: '~1.0.0',
+511 silly install resolved        'json-stringify-safe': '~5.0.0',
+511 silly install resolved        'mime-types': '~1.0.1',
+511 silly install resolved        'forever-agent': '~0.5.0',
+511 silly install resolved        'node-uuid': '~1.4.0',
+511 silly install resolved        'tough-cookie': '>=0.12.0',
+511 silly install resolved        'form-data': '~0.1.0',
+511 silly install resolved        'tunnel-agent': '~0.4.0',
+511 silly install resolved        'http-signature': '~0.10.0',
+511 silly install resolved        'oauth-sign': '~0.3.0',
+511 silly install resolved        hawk: '1.1.1',
+511 silly install resolved        'aws-sign2': '~0.5.0',
+511 silly install resolved        stringstream: '~0.0.4' },
+511 silly install resolved     optionalDependencies:
+511 silly install resolved      { 'tough-cookie': '>=0.12.0',
+511 silly install resolved        'form-data': '~0.1.0',
+511 silly install resolved        'tunnel-agent': '~0.4.0',
+511 silly install resolved        'http-signature': '~0.10.0',
+511 silly install resolved        'oauth-sign': '~0.3.0',
+511 silly install resolved        hawk: '1.1.1',
+511 silly install resolved        'aws-sign2': '~0.5.0',
+511 silly install resolved        stringstream: '~0.0.4' },
+511 silly install resolved     scripts: { test: 'node tests/run.js' },
+511 silly install resolved     homepage: 'https://github.com/mikeal/request',
+511 silly install resolved     _id: 'request@2.40.0',
+511 silly install resolved     _shasum: '4dd670f696f1e6e842e66b4b5e839301ab9beb67',
+511 silly install resolved     _from: 'request@2.40.0',
+511 silly install resolved     _npmVersion: '1.4.9',
+511 silly install resolved     _npmUser: { name: 'mikeal', email: 'mikeal.rogers@gmail.com' },
+511 silly install resolved     maintainers: [ [Object] ],
+511 silly install resolved     dist:
+511 silly install resolved      { shasum: '4dd670f696f1e6e842e66b4b5e839301ab9beb67',
+511 silly install resolved        tarball: 'http://registry.npmjs.org/request/-/request-2.40.0.tgz' },
+511 silly install resolved     directories: {},
+511 silly install resolved     _resolved: 'https://registry.npmjs.org/request/-/request-2.40.0.tgz',
+511 silly install resolved     readme: 'ERROR: No README data found!' } ]
+512 info install request@2.40.0 into /Users/oborden14/Documents/ForceReader
+513 info installOne request@2.40.0
+514 silly install resolved [ { name: 'cookie-parser',
+514 silly install resolved     description: 'cookie parsing with signatures',
+514 silly install resolved     version: '1.3.3',
+514 silly install resolved     author:
+514 silly install resolved      { name: 'TJ Holowaychuk',
+514 silly install resolved        email: 'tj@vision-media.ca',
+514 silly install resolved        url: 'http://tjholowaychuk.com' },
+514 silly install resolved     licenses: 'MIT',
+514 silly install resolved     repository:
+514 silly install resolved      { type: 'git',
+514 silly install resolved        url: 'https://github.com/expressjs/cookie-parser' },
+514 silly install resolved     keywords: [ 'cookie', 'middleware' ],
+514 silly install resolved     dependencies: { cookie: '0.1.2', 'cookie-signature': '1.0.5' },
+514 silly install resolved     devDependencies: { istanbul: '0.3.2', mocha: '~1.21.4', supertest: '~0.13.0' },
+514 silly install resolved     files: [ 'lib/', 'LICENSE', 'HISTORY.md', 'index.js' ],
+514 silly install resolved     engines: { node: '>= 0.8.0' },
+514 silly install resolved     scripts:
+514 silly install resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
+514 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+514 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/' },
+514 silly install resolved     gitHead: '893bf91a8a4e49c63b6e32065991b13a7d27ed4c',
+514 silly install resolved     bugs: { url: 'https://github.com/expressjs/cookie-parser/issues' },
+514 silly install resolved     homepage: 'https://github.com/expressjs/cookie-parser',
+514 silly install resolved     _id: 'cookie-parser@1.3.3',
+514 silly install resolved     _shasum: '7e3a2c745f4b460d5a340e578a0baa5d7725fe37',
+514 silly install resolved     _from: 'cookie-parser@1.3.3',
+514 silly install resolved     _npmVersion: '1.4.21',
+514 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+514 silly install resolved     maintainers: [ [Object], [Object] ],
+514 silly install resolved     dist:
+514 silly install resolved      { shasum: '7e3a2c745f4b460d5a340e578a0baa5d7725fe37',
+514 silly install resolved        tarball: 'http://registry.npmjs.org/cookie-parser/-/cookie-parser-1.3.3.tgz' },
+514 silly install resolved     directories: {},
+514 silly install resolved     _resolved: 'https://registry.npmjs.org/cookie-parser/-/cookie-parser-1.3.3.tgz',
+514 silly install resolved     readme: 'ERROR: No README data found!' } ]
+515 info install cookie-parser@1.3.3 into /Users/oborden14/Documents/ForceReader
+516 info installOne cookie-parser@1.3.3
+517 silly install resolved [ { name: 'static-favicon',
+517 silly install resolved     version: '1.0.2',
+517 silly install resolved     description: 'favicon serving middleware with caching',
+517 silly install resolved     keywords: [ 'favicon', 'middleware' ],
+517 silly install resolved     repository: { type: 'git', url: 'git://github.com/expressjs/favicon.git' },
+517 silly install resolved     author:
+517 silly install resolved      { name: 'TJ Holowaychuk',
+517 silly install resolved        email: 'tj@vision-media.ca',
+517 silly install resolved        url: 'http://tjholowaychuk.com' },
+517 silly install resolved     dependencies: {},
+517 silly install resolved     devDependencies: { mocha: '>= 1.17.0' },
+517 silly install resolved     licenses: 'MIT',
+517 silly install resolved     main: './index.js',
+517 silly install resolved     engines: { node: '>= 0.10.0' },
+517 silly install resolved     scripts: { test: 'true' },
+517 silly install resolved     bugs: { url: 'https://github.com/expressjs/favicon/issues' },
+517 silly install resolved     homepage: 'https://github.com/expressjs/favicon',
+517 silly install resolved     _id: 'static-favicon@1.0.2',
+517 silly install resolved     dist:
+517 silly install resolved      { shasum: '7c15920dda2bf33f414b0e60aebbd65cdd2a1d2f',
+517 silly install resolved        tarball: 'http://registry.npmjs.org/static-favicon/-/static-favicon-1.0.2.tgz' },
+517 silly install resolved     _from: 'static-favicon@1.0.2',
+517 silly install resolved     _npmVersion: '1.4.4',
+517 silly install resolved     _npmUser: { name: 'shtylman', email: 'shtylman@gmail.com' },
+517 silly install resolved     maintainers: [ [Object] ],
+517 silly install resolved     directories: {},
+517 silly install resolved     _shasum: '7c15920dda2bf33f414b0e60aebbd65cdd2a1d2f',
+517 silly install resolved     _resolved: 'https://registry.npmjs.org/static-favicon/-/static-favicon-1.0.2.tgz',
+517 silly install resolved     readme: 'ERROR: No README data found!' } ]
+518 info install static-favicon@1.0.2 into /Users/oborden14/Documents/ForceReader
+519 info installOne static-favicon@1.0.2
+520 verbose lock using /Users/oborden14/.npm/_locks/debug-c16bcd16fda4a0e2.lock for /Users/oborden14/Documents/ForceReader/node_modules/debug
+521 verbose lock using /Users/oborden14/.npm/_locks/method-override-bd2a06d82b0b9e91.lock for /Users/oborden14/Documents/ForceReader/node_modules/method-override
+522 verbose lock using /Users/oborden14/.npm/_locks/moment-6a69a77593591f2a.lock for /Users/oborden14/Documents/ForceReader/node_modules/moment
+523 silly install resolved [ { name: 'socket.io',
+523 silly install resolved     version: '1.0.6',
+523 silly install resolved     description: 'node.js realtime framework server',
+523 silly install resolved     keywords:
+523 silly install resolved      [ 'realtime',
+523 silly install resolved        'framework',
+523 silly install resolved        'websocket',
+523 silly install resolved        'tcp',
+523 silly install resolved        'events',
+523 silly install resolved        'socket',
+523 silly install resolved        'io' ],
+523 silly install resolved     repository: { type: 'git', url: 'git://github.com/LearnBoost/socket.io' },
+523 silly install resolved     scripts: { test: 'make test' },
+523 silly install resolved     dependencies:
+523 silly install resolved      { 'engine.io': '1.3.1',
+523 silly install resolved        'socket.io-parser': '2.2.0',
+523 silly install resolved        'socket.io-client': '1.0.6',
+523 silly install resolved        'socket.io-adapter': '0.2.0',
+523 silly install resolved        'has-binary-data': '0.1.1',
+523 silly install resolved        debug: '0.7.4' },
+523 silly install resolved     devDependencies:
+523 silly install resolved      { mocha: '1.16.2',
+523 silly install resolved        'expect.js': '0.3.1',
+523 silly install resolved        supertest: '0.8.2',
+523 silly install resolved        superagent: '0.17.0',
+523 silly install resolved        istanbul: '0.2.3' },
+523 silly install resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+523 silly install resolved     gitHead: 'd99e30fca7feef20bd30508e0224c5d815ba0be9',
+523 silly install resolved     bugs: { url: 'https://github.com/LearnBoost/socket.io/issues' },
+523 silly install resolved     homepage: 'https://github.com/LearnBoost/socket.io',
+523 silly install resolved     _id: 'socket.io@1.0.6',
+523 silly install resolved     _shasum: 'b566532888dae3ac9058a12f294015ebdfa8084a',
+523 silly install resolved     _from: 'socket.io@1.0.6',
+523 silly install resolved     _npmVersion: '1.4.14',
+523 silly install resolved     _npmUser: { name: 'rauchg', email: 'rauchg@gmail.com' },
+523 silly install resolved     maintainers: [ [Object] ],
+523 silly install resolved     dist:
+523 silly install resolved      { shasum: 'b566532888dae3ac9058a12f294015ebdfa8084a',
+523 silly install resolved        tarball: 'http://registry.npmjs.org/socket.io/-/socket.io-1.0.6.tgz' },
+523 silly install resolved     directories: {},
+523 silly install resolved     _resolved: 'https://registry.npmjs.org/socket.io/-/socket.io-1.0.6.tgz',
+523 silly install resolved     readme: 'ERROR: No README data found!' } ]
+524 info install socket.io@1.0.6 into /Users/oborden14/Documents/ForceReader
+525 info installOne socket.io@1.0.6
+526 silly install resolved [ { name: 'string',
+526 silly install resolved     version: '1.9.1',
+526 silly install resolved     description: 'string contains methods that aren\'t included in the vanilla JavaScript string such as escaping html, decoding html entities, stripping tags, etc.',
+526 silly install resolved     homepage: 'http://stringjs.com',
+526 silly install resolved     repository:
+526 silly install resolved      { type: 'git',
+526 silly install resolved        url: 'https://github.com/jprichardson/string.js' },
+526 silly install resolved     keywords:
+526 silly install resolved      [ 'string',
+526 silly install resolved        'strings',
+526 silly install resolved        'string.js',
+526 silly install resolved        'stringjs',
+526 silly install resolved        'S',
+526 silly install resolved        's',
+526 silly install resolved        'csv',
+526 silly install resolved        'html',
+526 silly install resolved        'entities',
+526 silly install resolved        'parse',
+526 silly install resolved        'html',
+526 silly install resolved        'tags',
+526 silly install resolved        'strip',
+526 silly install resolved        'trim',
+526 silly install resolved        'encode',
+526 silly install resolved        'decode',
+526 silly install resolved        'escape',
+526 silly install resolved        'unescape' ],
+526 silly install resolved     author: { name: 'JP Richardson', email: 'jprichardson@gmail.com' },
+526 silly install resolved     licenses: [ [Object] ],
+526 silly install resolved     dependencies: {},
+526 silly install resolved     devDependencies: { mocha: '*', 'uglify-js': '1.3.x' },
+526 silly install resolved     main: 'lib/string',
+526 silly install resolved     scripts: { test: 'mocha test' },
+526 silly install resolved     bugs: { url: 'https://github.com/jprichardson/string.js/issues' },
+526 silly install resolved     _id: 'string@1.9.1',
+526 silly install resolved     dist:
+526 silly install resolved      { shasum: '8aae1cf563dea767538dd7a3f0db2239869c619e',
+526 silly install resolved        tarball: 'http://registry.npmjs.org/string/-/string-1.9.1.tgz' },
+526 silly install resolved     _from: 'string@1.9.1',
+526 silly install resolved     _npmVersion: '1.4.3',
+526 silly install resolved     _npmUser: { name: 'jp', email: 'jprichardson@gmail.com' },
+526 silly install resolved     maintainers: [ [Object] ],
+526 silly install resolved     directories: {},
+526 silly install resolved     _shasum: '8aae1cf563dea767538dd7a3f0db2239869c619e',
+526 silly install resolved     _resolved: 'https://registry.npmjs.org/string/-/string-1.9.1.tgz',
+526 silly install resolved     readme: 'ERROR: No README data found!' } ]
+527 info install string@1.9.1 into /Users/oborden14/Documents/ForceReader
+528 info installOne string@1.9.1
+529 verbose lock using /Users/oborden14/.npm/_locks/feedparser-a6272fca0d27b187.lock for /Users/oborden14/Documents/ForceReader/node_modules/feedparser
+530 verbose lock using /Users/oborden14/.npm/_locks/jade-2d1031d6ab0fb09c.lock for /Users/oborden14/Documents/ForceReader/node_modules/jade
+531 verbose lock using /Users/oborden14/.npm/_locks/body-parser-2ca30558af81ee4c.lock for /Users/oborden14/Documents/ForceReader/node_modules/body-parser
+532 verbose lock using /Users/oborden14/.npm/_locks/bcryptjs-25e0f172ab2bfa85.lock for /Users/oborden14/Documents/ForceReader/node_modules/bcryptjs
+533 verbose lock using /Users/oborden14/.npm/_locks/morgan-f7b72fddb6ff3146.lock for /Users/oborden14/Documents/ForceReader/node_modules/morgan
+534 silly install resolved [ { name: 'express',
+534 silly install resolved     description: 'Fast, unopinionated, minimalist web framework',
+534 silly install resolved     version: '4.5.1',
+534 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+534 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+534 silly install resolved     keywords:
+534 silly install resolved      [ 'express',
+534 silly install resolved        'framework',
+534 silly install resolved        'sinatra',
+534 silly install resolved        'web',
+534 silly install resolved        'rest',
+534 silly install resolved        'restful',
+534 silly install resolved        'router',
+534 silly install resolved        'app',
+534 silly install resolved        'api' ],
+534 silly install resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/express' },
+534 silly install resolved     license: 'MIT',
+534 silly install resolved     dependencies:
+534 silly install resolved      { accepts: '~1.0.7',
+534 silly install resolved        'buffer-crc32': '0.2.3',
+534 silly install resolved        debug: '1.0.2',
+534 silly install resolved        depd: '0.3.0',
+534 silly install resolved        'escape-html': '1.0.1',
+534 silly install resolved        finalhandler: '0.0.2',
+534 silly install resolved        'media-typer': '0.2.0',
+534 silly install resolved        methods: '1.0.1',
+534 silly install resolved        parseurl: '1.0.1',
+534 silly install resolved        'proxy-addr': '1.0.1',
+534 silly install resolved        'range-parser': '1.0.0',
+534 silly install resolved        send: '0.5.0',
+534 silly install resolved        'serve-static': '~1.3.0',
+534 silly install resolved        'type-is': '~1.3.2',
+534 silly install resolved        vary: '0.1.0',
+534 silly install resolved        cookie: '0.1.2',
+534 silly install resolved        fresh: '0.2.2',
+534 silly install resolved        'cookie-signature': '1.0.4',
+534 silly install resolved        'merge-descriptors': '0.0.2',
+534 silly install resolved        'utils-merge': '1.0.0',
+534 silly install resolved        qs: '0.6.6',
+534 silly install resolved        'path-to-regexp': '0.1.2' },
+534 silly install resolved     devDependencies:
+534 silly install resolved      { after: '0.8.1',
+534 silly install resolved        istanbul: '0.2.14',
+534 silly install resolved        mocha: '~1.20.1',
+534 silly install resolved        should: '~4.0.4',
+534 silly install resolved        supertest: '~0.13.0',
+534 silly install resolved        'connect-redis': '~2.0.0',
+534 silly install resolved        ejs: '~1.0.0',
+534 silly install resolved        jade: '~1.3.1',
+534 silly install resolved        marked: '0.3.2',
+534 silly install resolved        hjs: '~0.0.6',
+534 silly install resolved        'body-parser': '~1.4.3',
+534 silly install resolved        'cookie-parser': '~1.3.1',
+534 silly install resolved        'express-session': '~1.6.1',
+534 silly install resolved        'method-override': '2.0.2',
+534 silly install resolved        multiparty: '~3.3.0',
+534 silly install resolved        morgan: '1.1.1',
+534 silly install resolved        vhost: '2.0.0' },
+534 silly install resolved     engines: { node: '>= 0.10.0' },
+534 silly install resolved     scripts:
+534 silly install resolved      { prepublish: 'npm prune',
+534 silly install resolved        test: 'mocha --require test/support/env --reporter dot --check-leaks test/ test/acceptance/',
+534 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --reporter dot --check-leaks test/ test/acceptance/',
+534 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --reporter spec --check-leaks test/ test/acceptance/' },
+534 silly install resolved     bugs: { url: 'https://github.com/visionmedia/express/issues' },
+534 silly install resolved     homepage: 'https://github.com/visionmedia/express',
+534 silly install resolved     _id: 'express@4.5.1',
+534 silly install resolved     dist:
+534 silly install resolved      { shasum: '4bc3e6ec9db28e575fe591c36fbb781ffef6fe7c',
+534 silly install resolved        tarball: 'http://registry.npmjs.org/express/-/express-4.5.1.tgz' },
+534 silly install resolved     _from: 'express@4.5.1',
+534 silly install resolved     _npmVersion: '1.4.3',
+534 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+534 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+534 silly install resolved     directories: {},
+534 silly install resolved     _shasum: '4bc3e6ec9db28e575fe591c36fbb781ffef6fe7c',
+534 silly install resolved     _resolved: 'https://registry.npmjs.org/express/-/express-4.5.1.tgz',
+534 silly install resolved     readme: 'ERROR: No README data found!' } ]
+535 info install express@4.5.1 into /Users/oborden14/Documents/ForceReader
+536 info installOne express@4.5.1
+537 verbose lock using /Users/oborden14/.npm/_locks/request-df51470e56b53db7.lock for /Users/oborden14/Documents/ForceReader/node_modules/request
+538 verbose lock using /Users/oborden14/.npm/_locks/cookie-parser-ef9edee831463bc4.lock for /Users/oborden14/Documents/ForceReader/node_modules/cookie-parser
+539 verbose lock using /Users/oborden14/.npm/_locks/static-favicon-97f55c93a3091c8a.lock for /Users/oborden14/Documents/ForceReader/node_modules/static-favicon
+540 verbose lock using /Users/oborden14/.npm/_locks/socket-io-ef3dc8d661e79a84.lock for /Users/oborden14/Documents/ForceReader/node_modules/socket.io
+541 verbose lock using /Users/oborden14/.npm/_locks/string-f2c987b15e600c6a.lock for /Users/oborden14/Documents/ForceReader/node_modules/string
+542 verbose lock using /Users/oborden14/.npm/_locks/express-4de6e5abd892a546.lock for /Users/oborden14/Documents/ForceReader/node_modules/express
+543 warn locking Error: EACCES, open '/Users/oborden14/.npm/_locks/debug-c16bcd16fda4a0e2.lock'
+543 warn locking  failed { [Error: EACCES, open '/Users/oborden14/.npm/_locks/debug-c16bcd16fda4a0e2.lock']
+543 warn locking   errno: 3,
+543 warn locking   code: 'EACCES',
+543 warn locking   path: '/Users/oborden14/.npm/_locks/debug-c16bcd16fda4a0e2.lock' }
+544 verbose stack Error: Attempt to unlock /Users/oborden14/Documents/ForceReader/node_modules/debug, which hasn't been locked
+544 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:54:11)
+544 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:909:5)
+544 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:913:20
+544 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:36:9
+544 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+544 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+544 verbose stack     at Object.oncomplete (fs.js:107:15)
+545 verbose cwd /Users/oborden14/Documents/ForceReader
+546 error Darwin 13.4.0
+547 error argv "node" "/usr/local/bin/npm" "update"
+548 error node v0.10.28
+549 error npm  v2.1.3
+550 error Attempt to unlock /Users/oborden14/Documents/ForceReader/node_modules/debug, which hasn't been locked
+551 error If you need help, you may report this error at:
+551 error     <http://github.com/npm/npm/issues>
+552 verbose exit [ 1, true ]

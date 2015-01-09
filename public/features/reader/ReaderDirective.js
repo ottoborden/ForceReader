@@ -10,7 +10,7 @@ angular.module('Reader')
             scope.$watch('feedsLoaded', function(value) {
                 if(value === 1) {
                     drawForceReader();
-                } else if (value > 1) {
+                } else if (value === 4) {
                     updateForceReader(scope.feedData);
                 }
             });
@@ -74,6 +74,9 @@ angular.module('Reader')
                 node.exit().remove();
 
                 node.enter().append('circle')
+                    .attr('data', function (d) {
+                        if(d.name === 'root') { return d.name; }
+                    })
                     .attr('class', 'node')
                     .attr("cx", function (d) {
                         return d.x;
@@ -114,6 +117,7 @@ angular.module('Reader')
 
             // Color leaf nodes orange, and packages white or blue.
             function color(d) {
+                if(d.name === 'root') { return '#ff0000'; }
                 return d._children ? "#3182bd" : d.children ? "#c6dbef" : "#fd8d3c";
             };
 
@@ -130,7 +134,7 @@ angular.module('Reader')
                         d.children = d._children;
                         d._children = null;
                     }
-                    updateForceReader(root);
+                    updateForceReader(scope.feedData);
                 }
             };
 

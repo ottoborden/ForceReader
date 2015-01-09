@@ -1,0 +1,2 @@
+The reason the graph does not draw properly is because the nodes are loaded and inserted asynchronously
+    Try doing a lookup by Feed name and pushing to it's children array
