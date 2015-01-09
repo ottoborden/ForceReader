@@ -2,3 +2,5 @@ node_modules/
 public/vendor/
 .idea/
 *.iml
+*.log
+*.txt
