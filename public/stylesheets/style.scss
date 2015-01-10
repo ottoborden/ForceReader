@@ -89,11 +89,6 @@ em {
   }
 }
 
-.jumbotron {
-  margin-top: -20px;
-  border-bottom: 1px solid #dae2e4;
-}
-
 .media-object {
   max-width: 200px;
   margin-bottom: 10px;
@@ -220,6 +215,13 @@ em {
 }
 
 .jumbotron {
-  background: url('/images/bottle.jpeg') no-repeat center center;
-  height: 350px;
+  background: url('/images/jumbotron.jpeg') no-repeat center center;
+  height: 400px;
+  margin-top: -20px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #dae2e4;
+}
+
+.infobar {
+
 }

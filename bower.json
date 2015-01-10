@@ -32,6 +32,7 @@
         "animate.css": "3.2.0",
         "bootstrap": "latest",
         "font-awesome": "latest",
-        "d3": "3.4.1"
+        "d3": "3.4.1",
+        "moment": "latest"
     }
 }

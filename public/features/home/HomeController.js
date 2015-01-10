@@ -1,11 +1,22 @@
 angular.module('Home')
     .controller('HomeController', ['$scope', '$http', function($scope, $http) {
-        console.log('homectrl');
+        function getLatestCommit() {
+            $http.get('https://api.github.com/repos/ottoborden/ForceReader/commits').success(function (res) {
+                if(res.length) {
+                    $scope.latestCommit = moment(res[0].commit.author.date).format("dddd, MMMM Do YYYY, h:mm:ss a");
+                }
+            });
+        }
 
-        // Make this topics
-        $scope.genres = ['Action', 'Adventure', 'Animation', 'Children', 'Comedy',
-            'Crime', 'Documentary', 'Drama', 'Family', 'Fantasy', 'Food',
-            'Home and Garden', 'Horror', 'Mini-Series', 'Mystery', 'News', 'Reality',
-            'Romance', 'Sci-Fi', 'Sport', 'Suspense', 'Talk Show', 'Thriller',
-            'Travel'];
+        function getForks() {
+            $http.get('https://api.github.com/repos/ottoborden/ForceReader/forks').success(function (res) {
+                $scope.forks = res.length;
+            });
+        }
+
+        getLatestCommit();
+        getForks();
+
+        $scope.latestCommit = '';
+        $scope.forks = '';
     }]);

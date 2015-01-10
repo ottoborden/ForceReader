@@ -53,12 +53,14 @@ app.get('*', function(req, res) {
  */
 io.on('connection', function(socket) { 'use strict';
     var feeds = [
-        //{name: 'Kurzweil AI', rssUrl: 'http://www.kurzweilai.net/news/feed/atom'},
+        {name: 'Kurzweil AI', rssUrl: 'http://www.kurzweilai.net/news/feed/atom'},
         {name: 'Tech Crunch', rssUrl: 'http://feeds.feedburner.com/TechCrunch/'},
         {name: 'Wired Top Stories', rssUrl: 'http://feeds.wired.com/wired/index'},
         {name: 'TechRadar - All News', rssUrl: 'http://feeds2.feedburner.com/techradar/allnews'},
         {name: 'ZDNet News', rssUrl: 'http://www.zdnet.com/news/rss.xml'},
-        //{name: 'TechRepublic News', rssUrl: 'http://www.techrepublic.com/rssfeeds/articles/latest/'}
+        {name: 'Ars Technica', rssUrl: 'http://feeds.arstechnica.com/arstechnica/index'},
+        {name: 'Engadget', rssUrl: 'http://podcasts.engadget.com/rss.xml'},
+        {name: 'Gizmodo', rssUrl: 'http://feeds.gawker.com/gizmodo/full'}
     ];
     var numFeeds = feeds.length,
         feedsLoaded = 0;
@@ -96,7 +98,7 @@ io.on('connection', function(socket) { 'use strict';
                         while (item = stream.read()) {
                             var story = {
                                 'title': S(S(item.title).stripTags().s).decodeHTMLEntities().s,
-                                'summary': S(S(item.summary).stripTags().s).decodeHTMLEntities().s.substring(0, 100),
+                                //'summary': S(S(item.summary).stripTags().s).decodeHTMLEntities().s.substring(0, 100),
                                 'date': moment(item.date).format('dddd, MMMM Do YYYY, h:mm:ss a'),
                                 'link': item.link,
                                 'guid': item.guid,

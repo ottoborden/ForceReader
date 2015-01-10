@@ -1,5 +1,5 @@
 angular.module('Reader')
-    .controller('ReaderController', ['$scope', function($scope) { 'use strict';
+    .controller('ReaderController', ['$scope', '$http', function($scope, $http) { 'use strict';
         $scope.fetching = false;
         $scope.numFeeds = 0;
         $scope.feedsLoaded = 0;
@@ -8,7 +8,20 @@ angular.module('Reader')
             name: 'root',
             size: 30000,
             weight: 500,
-            children: [],
+            children: [
+                {
+                    name: 'Tech Category',
+                    size: 25000,
+                    weight: 500,
+                    children: []
+                },
+                {
+                    name: 'Other Category',
+                    size: 25000,
+                    weight: 500,
+                    children: []
+                }
+            ],
             fixed: 0
         };
         $scope.begin = false;
@@ -25,14 +38,13 @@ angular.module('Reader')
         socket.on('feedLoaded', function(data) {
             console.log('a feed has been loaded');
             //console.log(data);
-            $scope.feedData.children.push({
+            $scope.feedData.children[0].children.push({
                 name: data.feed.feedName,
-                //size: data.feed.stories.length * 1000,
-                size: Math.random() * (10000 - 1000) + 1000,
+                size: data.feed.stories.length * 1000,
                 children: data.feed.stories
             });
 
-            $scope.feedsLoaded = $scope.feedData.children.length;
+            $scope.feedsLoaded = $scope.feedData.children[0].children.length;
             $scope.storiesLoaded += data.feed.stories.length;
             $scope.begin = true;
 

@@ -1,3 +1,1 @@
-angular.module('Reader', [
-    'd3'
-]);
+angular.module('Reader', []);

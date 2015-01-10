@@ -1,18 +1,9 @@
-angular.module('d3', []).factory('d3Service', [function() {
-    var d3;
-    return d3;
-}]);
 
-angular.module('lodash', []).factory('lodashService', [function() {
-    var _;
-    return _;
-}]);
 
 angular.module('myApp', [
     'ngRoute',
     'Home',
-    'Reader',
-    'd3'
+    'Reader'
 ]).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
     $routeProvider
