@@ -13,7 +13,7 @@ angular.module('Reader')
         };
         $scope.begin = false;
 
-        var socket = io.connect('http://localhost:3000'); // Now the global io object is available
+        var socket = io.connect('http://localhost:8080'); // Now the global io object is available
         socket.on('fetching', function(data) {
             console.log('fetching rss feeds has begun');
             $scope.fetching = true;

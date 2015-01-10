@@ -19,7 +19,7 @@ var app = require('express')();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', 8080);
 console.log(app.get('port'));
 app.use(favicon());
 app.use(logger('dev'));
