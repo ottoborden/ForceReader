@@ -1,5 +1,5 @@
 angular.module('Reader')
-    .directive('readerDirective', ['d3Service', function (d3Service) { //'use strict';
+    .directive('readerDirective', ['d3Service', function (d3Service) { 'use strict';
         function linkFn(scope, element, attrs) {
             var force,
                 svg,
@@ -9,31 +9,23 @@ angular.module('Reader')
             scope.ticks = 0;
             scope.$watch('feedsLoaded', function(value) {
                 if(value === 1) {
-                    drawForceReader();
+                    var width = 900,
+                        height = 400;
+
+                    force = d3.layout.force()
+                        .size([width, height])
+                        .on('tick', tick);
+
+                    svg = d3.select(element[0]).append('svg')
+                        .attr('width', width)
+                        .attr('height', height);
+
+                    link = svg.selectAll('.link'),
+                        node = svg.selectAll('.node');
                 } else if (value === 4) {
                     updateForceReader(scope.feedData);
                 }
             });
-
-            function drawForceReader() {
-                var width = 900,
-                    height = 400;
-
-                force = d3.layout.force()
-                    .size([width, height])
-                    .on('tick', tick);
-
-                svg = d3.select(element[0]).append('svg')
-                    .attr('width', width)
-                    .attr('height', height);
-
-                link = svg.selectAll('.link'),
-                    node = svg.selectAll('.node');
-
-                //root = scope.feedData;
-                console.log(scope.feedData);
-                updateForceReader(scope.feedData);
-            };
 
             function updateForceReader(root) {
                 var nodes = flatten(root),
@@ -124,8 +116,8 @@ angular.module('Reader')
             // Toggle children on click.
             function click(d) {
                 console.log(d);
-                if (!d3.event.defaultPrevented) {
-                    if(d.name === 'root'){
+                /*if (!d3.event.defaultPrevented) {
+                    if(d.name === 'root') {
                         return;
                     } else if (d.children) {
                         d._children = d.children;
@@ -135,7 +127,7 @@ angular.module('Reader')
                         d._children = null;
                     }
                     updateForceReader(scope.feedData);
-                }
+                }*/
             };
 
             // Returns a list of all nodes under the root.

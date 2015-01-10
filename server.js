@@ -52,7 +52,7 @@ app.get('*', function(req, res) {
  */
 io.on('connection', function(socket) { 'use strict';
     var feeds = [
-        {name: 'Kurzweil AI', rssUrl: 'http://www.kurzweilai.net/news/feed/atom'},
+        //{name: 'Kurzweil AI', rssUrl: 'http://www.kurzweilai.net/news/feed/atom'},
         {name: 'Tech Crunch', rssUrl: 'http://feeds.feedburner.com/TechCrunch/'},
         {name: 'Wired Top Stories', rssUrl: 'http://feeds.wired.com/wired/index'},
         {name: 'TechRadar - All News', rssUrl: 'http://feeds2.feedburner.com/techradar/allnews'},

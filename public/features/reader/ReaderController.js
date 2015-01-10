@@ -24,10 +24,11 @@ angular.module('Reader')
 
         socket.on('feedLoaded', function(data) {
             console.log('a feed has been loaded');
-            console.log(data);
+            //console.log(data);
             $scope.feedData.children.push({
                 name: data.feed.feedName,
-                size: data.feed.stories.length * 1000,
+                //size: data.feed.stories.length * 1000,
+                size: Math.random() * (10000 - 1000) + 1000,
                 children: data.feed.stories
             });
 
