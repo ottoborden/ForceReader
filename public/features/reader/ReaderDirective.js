@@ -21,7 +21,7 @@ angular.module('Reader')
                         .attr('height', height);
 
                     link = svg.selectAll('.link'),
-                        node = svg.selectAll('.node');
+                    node = svg.selectAll('.node');
                 } else if (value === 4) {
                     updateForceReader(scope.feedData);
                 }
