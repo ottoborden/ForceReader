@@ -116,7 +116,7 @@ angular.module('Reader')
             // Toggle children on click.
             function click(d) {
                 console.log(d);
-                /*if (!d3.event.defaultPrevented) {
+                if (!d3.event.defaultPrevented) {
                     if(d.name === 'root') {
                         return;
                     } else if (d.children) {
@@ -127,7 +127,7 @@ angular.module('Reader')
                         d._children = null;
                     }
                     updateForceReader(scope.feedData);
-                }*/
+                }
             };
 
             // Returns a list of all nodes under the root.
