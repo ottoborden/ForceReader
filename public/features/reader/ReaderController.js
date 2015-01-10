@@ -1,5 +1,5 @@
 angular.module('Reader')
-    .controller('ReaderController', ['$scope', '$http', function($scope, $http) { 'use strict';
+    .controller('ReaderController', ['$scope', function($scope) { 'use strict';
         $scope.fetching = false;
         $scope.numFeeds = 0;
         $scope.feedsLoaded = 0;
@@ -10,13 +10,13 @@ angular.module('Reader')
             weight: 500,
             children: [
                 {
-                    name: 'Tech Category',
+                    name: 'tech',
                     size: 25000,
                     weight: 500,
                     children: []
                 },
                 {
-                    name: 'Other Category',
+                    name: 'other',
                     size: 25000,
                     weight: 500,
                     children: []
@@ -24,7 +24,6 @@ angular.module('Reader')
             ],
             fixed: 0
         };
-        $scope.begin = false;
 
         var socket = io.connect('http://localhost:8080'); // Now the global io object is available
         socket.on('fetching', function(data) {
@@ -37,16 +36,20 @@ angular.module('Reader')
 
         socket.on('feedLoaded', function(data) {
             console.log('a feed has been loaded');
-            //console.log(data);
-            $scope.feedData.children[0].children.push({
+            var cat;
+            $scope.feedData.children.forEach(function(item) {
+                if(item.name === data.feed.feedCategory) {
+                    cat = item;
+                }
+            });
+            cat.children.push({
                 name: data.feed.feedName,
                 size: data.feed.stories.length * 1000,
                 children: data.feed.stories
             });
 
-            $scope.feedsLoaded = $scope.feedData.children[0].children.length;
+            $scope.feedsLoaded += 1;
             $scope.storiesLoaded += data.feed.stories.length;
-            $scope.begin = true;
 
             $scope.$digest();
         });
@@ -54,6 +57,8 @@ angular.module('Reader')
         socket.on('allFeedsLoaded', function(data) {
             console.log('all feeds loaded');
             $scope.fetching = false;
+
+            console.log($scope.feedData);
 
             $scope.$digest();
         });
