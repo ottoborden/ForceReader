@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
+var passport = require('passport');
 
 var FeedParser = require('feedparser');
 var http = require('http');
@@ -42,10 +43,6 @@ server.listen(app.get('port'));
 app.get('*', function(req, res) {
     res.redirect('/#' + req.originalUrl);
 });
-
-/*app.listen(app.get('port'), function() {
-    console.log('Express server listening on port ' + app.get('port'));
-});*/
 
 
 /*
