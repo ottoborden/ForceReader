@@ -59,14 +59,22 @@ io.on('connection', function(socket) { 'use strict';
         {name: 'TechRadar - All News', rssUrl: 'http://feeds2.feedburner.com/techradar/allnews', category: 'tech'},
         {name: 'ZDNet News', rssUrl: 'http://www.zdnet.com/news/rss.xml', category: 'tech'},
         {name: 'Ars Technica', rssUrl: 'http://feeds.arstechnica.com/arstechnica/index', category: 'tech'},
-        {name: 'Engadget', rssUrl: 'http://podcasts.engadget.com/rss.xml', category: 'other'},
-        {name: 'Gizmodo', rssUrl: 'http://feeds.gawker.com/gizmodo/full', category: 'other'}
+        {name: 'Engadget', rssUrl: 'http://podcasts.engadget.com/rss.xml', category: 'tech'},
+        {name: 'Gizmodo', rssUrl: 'http://feeds.gawker.com/gizmodo/full', category: 'tech'},
+        {name: 'Business Insider', rssUrl: 'http://feeds2.feedburner.com/businessinsider', category: 'business'},
+        {name: 'Fast Company', rssUrl: 'http://feeds.feedburner.com/fastcompany/headlines', category: 'business'},
+        {name: 'The Atlantic Business', rssUrl: 'http://feeds.feedburner.com/AtlanticBusinessChannel', category: 'business'},
+        {name: 'The Economist Business and Finance', rssUrl: 'http://www.economist.com/sections/business-finance/rss.xml', category: 'business'},
+        {name: 'VentureBeat', rssUrl: 'http://feeds.venturebeat.com/VentureBeat', category: 'business'},
+        {name: 'Smashing Magazine', rssUrl: 'http://www.smashingmagazine.com/feed/', category: 'design'},
+        {name: 'The UX Booth', rssUrl: 'http://feeds.feedburner.com/uxbooth', category: 'design'},
+        {name: 'UX Magazine', rssUrl: 'http://feeds.feedburner.com/UXM', category: 'design'}
     ];
-    var numFeeds = feeds.length,
+    var categories = ['tech', 'business', 'design'],
         feedsLoaded = 0;
 
     function allFeedsLoaded() { // JS funcs that don't hit explicit return statement return undefined
-        if(feedsLoaded >= numFeeds) {
+        if(feedsLoaded >= feeds.length) {
             return true;
         }
     };
@@ -75,7 +83,8 @@ io.on('connection', function(socket) { 'use strict';
 
     socket.emit('fetching', {
         msg: 'fetching rss data',
-        numFeeds: feeds.length
+        numFeeds: feeds.length,
+        categories: categories
     });
 
     _.map(feeds, function(item) {
@@ -99,7 +108,7 @@ io.on('connection', function(socket) { 'use strict';
                         while (item = stream.read()) {
                             var story = {
                                 'title': S(S(item.title).stripTags().s).decodeHTMLEntities().s,
-                                //'summary': S(S(item.summary).stripTags().s).decodeHTMLEntities().s.substring(0, 100),
+                                'summary': S(S(item.summary).stripTags().s).decodeHTMLEntities().s.substring(0, 100),
                                 'date': moment(item.date).format('dddd, MMMM Do YYYY, h:mm:ss a'),
                                 'link': item.link,
                                 'guid': item.guid,

@@ -10,7 +10,7 @@ angular.module('Reader')
             scope.$watch('feedsLoaded', function(value) {
                 if(value === 1) {
                     var width = 1600,
-                        height = 400;
+                        height = 800;
 
                     force = d3.layout.force()
                         .size([width, height])
@@ -22,7 +22,7 @@ angular.module('Reader')
 
                     link = svg.selectAll('.link'),
                     node = svg.selectAll('.node');
-                } else if (value === 8) {
+                } else if (value === 16) {
                     updateForceReader(scope.feedData);
                 }
             });

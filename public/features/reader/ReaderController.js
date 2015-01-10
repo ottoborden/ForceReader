@@ -7,21 +7,7 @@ angular.module('Reader')
         $scope.feedData = {
             name: 'root',
             size: 30000,
-            weight: 500,
-            children: [
-                {
-                    name: 'tech',
-                    size: 25000,
-                    weight: 500,
-                    children: []
-                },
-                {
-                    name: 'other',
-                    size: 25000,
-                    weight: 500,
-                    children: []
-                }
-            ],
+            children: [],
             fixed: 0
         };
 
@@ -30,6 +16,14 @@ angular.module('Reader')
             console.log('fetching rss feeds has begun');
             $scope.fetching = true;
             $scope.numFeeds = data.numFeeds;
+
+            data.categories.forEach(function(item) {
+                $scope.feedData.children.push({
+                    name: item,
+                    size: 25000,
+                    children: []
+                });
+            });
 
             $scope.$apply();
         });
@@ -57,8 +51,6 @@ angular.module('Reader')
         socket.on('allFeedsLoaded', function(data) {
             console.log('all feeds loaded');
             $scope.fetching = false;
-
-            console.log($scope.feedData);
 
             $scope.$digest();
         });
