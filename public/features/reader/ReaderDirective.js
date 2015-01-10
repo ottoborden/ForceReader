@@ -1,6 +1,6 @@
 angular.module('Reader')
-    .directive('readerDirective', ['d3Service', function (d3Service) { 'use strict';
-        function linkFn(scope, element, attrs) {
+    .directive('readerDirective', ['d3Service', function () { 'use strict';
+        function linkFn(scope, element) {
             var force,
                 svg,
                 link,
