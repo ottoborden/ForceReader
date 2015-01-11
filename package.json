@@ -20,6 +20,7 @@
     "mongoose": "~3.8.13",
     "morgan": "~1.2.0",
     "passport": "0.2.1",
+    "passport-local": "1.0.0",
     "request": "~2.40.0",
     "socket.io": "1.0.6",
     "static-favicon": "~1.0.0",
@@ -29,5 +30,8 @@
     "gulp": "^3.8.7",
     "gulp-plumber": "^0.6.4",
     "gulp-sass": "^0.7.2"
+  },
+  "scripts": {
+    "postinstall": "bower install"
   }
 }
