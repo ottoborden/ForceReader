@@ -22,7 +22,6 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 app.set('port', 8080);
-console.log(app.get('port'));
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -36,6 +35,19 @@ app.use(express.static(path.join(__dirname, 'public')));
     Server
  */
 server.listen(app.get('port'));
+
+/*
+    Passport config
+ */
+var Account = require('./private/models/account');
+passport.use(new LocalStrategy(Account.authenticate()));
+passport.serializeUser(Account.serializeUser());
+passport.deserializeUser(Account.deserializeUser());
+
+/*
+    mongoose
+ */
+mongoose.connect('mongodb://localhost/passport_local_mongoose');
 
 
 /*
