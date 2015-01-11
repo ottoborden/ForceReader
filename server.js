@@ -39,10 +39,7 @@ server.listen(app.get('port'));
 /*
     Passport config
  */
-var Account = require('./private/models/account');
-passport.use(new LocalStrategy(Account.authenticate()));
-passport.serializeUser(Account.serializeUser());
-passport.deserializeUser(Account.deserializeUser());
+
 
 /*
     mongoose
@@ -62,6 +59,7 @@ app.get('*', function(req, res) {
     Handle socket connections
  */
 io.on('connection', function(socket) { 'use strict';
+    console.log('connect');
     var feeds = [
         {name: 'Kurzweil AI', rssUrl: 'http://www.kurzweilai.net/news/feed/atom', category: 'tech'},
         {name: 'Tech Crunch', rssUrl: 'http://feeds.feedburner.com/TechCrunch/', category: 'tech'},
@@ -88,8 +86,6 @@ io.on('connection', function(socket) { 'use strict';
             return true;
         }
     };
-
-    console.log('connect');
 
     socket.emit('fetching', {
         msg: 'fetching rss data',
