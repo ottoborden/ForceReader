@@ -1,4 +1,5 @@
 var express = require('express');
+var session = require('express-session');
 var path = require('path');
 var favicon = require('static-favicon');
 var logger = require('morgan');
@@ -8,6 +9,8 @@ var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+var MongoStore = require('connect-mongo')(session);
+var passportSocketIo = require("passport.socketio");
 
 var FeedParser = require('feedparser');
 var http = require('http');
@@ -17,8 +20,8 @@ var _ = require('lodash');
 
 //var api = require('./public/api/api');
 
-var app = require('express')();
-var server = require('http').Server(app);
+var app = express();
+var server = http.Server(app);
 var io = require('socket.io')(server);
 
 app.set('port', 8080);
@@ -36,15 +39,38 @@ app.use(express.static(path.join(__dirname, 'public')));
  */
 server.listen(app.get('port'));
 
-/*
-    Passport config
- */
-
 
 /*
     mongoose
  */
 mongoose.connect('mongodb://localhost/passport_local_mongoose');
+
+/*
+    Setup session store
+ */
+var sessionStore = new MongoStore({
+    collection: 'sessions',
+    mongooseConnection: mongoose.connection
+});
+app.use(session({
+    resave: false,
+    saveUninitialized: true,
+    secret: 'foo',
+    store: sessionStore
+}));
+
+
+/*
+ Passport config
+ */
+io.use(passportSocketIo.authorize({
+    cookieParser: cookieParser,
+    key:         'express.sid',       // the name of the cookie where express/connect stores its session_id
+    secret:      'session_secret',    // the session_secret to parse the cookie
+    store:       sessionStore        // we NEED to use a sessionstore. no memorystore please
+    //success:     onAuthorizeSuccess,  // *optional* callback on success - read more below
+    //fail:        onAuthorizeFail,     // *optional* callback on fail/error - read more below
+}));
 
 
 /*
