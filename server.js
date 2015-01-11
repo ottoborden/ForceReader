@@ -170,6 +170,7 @@ io.on('connection', function(socket) { 'use strict';
 
     socket.on('disconnect', function() {
         console.log('User disconnected');
+        socket.close();
     });
 });
 
